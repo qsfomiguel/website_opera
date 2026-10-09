@@ -79,8 +79,8 @@ const DEFAULT_CONTENT: SiteContent = {
     "Projetos de Hidráulica",
     "Outros Projetos",
   ],
-  logoUrl: "",
-  logoUrlLight: "",
+  logoUrl: "/brand/opera-logo-white.svg",
+  logoUrlLight: "/brand/opera-logo.svg",
   aboutPhotoUrl: "",
   awardImages: [],
 

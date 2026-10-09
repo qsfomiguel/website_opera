@@ -100,3 +100,18 @@ npx dotenv -e .env.local -- npx tsx scripts/create-admin.ts <username> <password
 ```
 
 Re-running the command with the same username updates its password (upsert). Log in at `/admin/login` with that username and password — the session is a signed cookie valid for 12h, verified in `src/lib/session.ts`.
+
+### Logo
+
+The OPERA logo lives in `public/brand/` as outlined SVGs with a transparent background (white for the header, black for the footer). Save it as the site logo in the database:
+
+```bash
+npx dotenv -e .env.local -- npx tsx scripts/set-logo.ts
+```
+
+To rebuild the SVGs from another font file (e.g. a licensed Futura BT), run `scripts/make-logo.py` (needs `python3 -m pip install fonttools`):
+
+```bash
+python3 scripts/make-logo.py <font.ttf> 300 public/brand/opera-logo.svg "#000"
+python3 scripts/make-logo.py <font.ttf> 300 public/brand/opera-logo-white.svg "#fff"
+```

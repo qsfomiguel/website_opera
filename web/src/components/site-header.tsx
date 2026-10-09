@@ -3,7 +3,7 @@ import Link from "next/link";
 
 import { AnimatedLink } from "@/components/animated-link";
 import { MobileNav } from "@/components/mobile-nav";
-import { getPngDimensions } from "@/lib/image-dimensions";
+import { getImageDimensions, isSvg } from "@/lib/image-dimensions";
 import { t, type Locale } from "@/lib/i18n";
 import { getSiteContent } from "@/lib/site-content";
 
@@ -18,7 +18,7 @@ export async function SiteHeader({
   pathSuffix?: string;
 } = {}) {
   const { logoUrl, navAboutLabel, navAboutLabelEn } = await getSiteContent();
-  const logoDimensions = await getPngDimensions(logoUrl);
+  const logoDimensions = await getImageDimensions(logoUrl);
   const ui = t(locale);
   const homeHref = locale === "pt" ? "/" : "/en";
   const prefix = locale === "pt" ? "" : "/en";
@@ -45,6 +45,7 @@ export async function SiteHeader({
               width={logoDimensions.width}
               height={logoDimensions.height}
               className="h-12 w-auto object-contain sm:h-16 md:h-32"
+              unoptimized={isSvg(logoUrl)}
               priority
             />
           ) : (
