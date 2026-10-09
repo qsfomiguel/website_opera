@@ -35,24 +35,59 @@ The easiest way to deploy your Next.js app is to use the [Vercel Platform](https
 
 Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
 
-## Admin access (local network deploy)
+## Deploy on a local network (LAN)
+
+Run the production build on a machine on your network; other devices on that same network reach it by IP. The app still talks to the same cloud Postgres (Neon) and Vercel Blob storage used elsewhere — only the Next.js server itself runs locally, there's no local database to stand up.
+
+### 1. Env vars
+
+Set these in `.env.local` on that machine (never commit this file):
+
+```
+DATABASE_URL="..."          # Neon Postgres connection string
+SESSION_SECRET="..."        # openssl rand -hex 32
+BLOB_READ_WRITE_TOKEN="..." # Vercel Blob — needed for image uploads in /admin
+```
+
+### 2. Build and start, bound to the LAN
+
+```bash
+npm install
+npm run build
+npx next start -H 0.0.0.0 -p 3000
+```
+
+`-H 0.0.0.0` makes the server listen on every network interface instead of just `localhost`.
+
+### 3. Find the machine's LAN IP
+
+```bash
+# macOS
+ipconfig getifaddr en0
+# Linux
+hostname -I
+```
+
+Other devices on the same network open `http://<that-ip>:3000`. If nothing loads, check the machine's firewall allows inbound connections on that port.
+
+### 4. Keep it running
+
+`next start` stops when its terminal closes. To keep it up across disconnects/reboots, run it under a process manager, e.g.:
+
+```bash
+npx pm2 start "npm start" --name opera-web
+pm2 save
+```
+
+### Note: `/admin` login needs HTTPS
+
+The admin session cookie is marked `secure` whenever `NODE_ENV=production` (which `next start` sets automatically), and browsers drop `secure` cookies on a plain `http://` connection — so logging in at `/admin/login` over a bare LAN IP won't persist the session. The public site pages are unaffected. To use `/admin` on the LAN, put a reverse proxy with a local/self-signed TLS cert in front (e.g. Caddy, nginx) and access the site through that instead.
+
+## Admin users
 
 The admin area (`/admin`) is gated by username + password, checked against an `admin_users` table in Postgres (password hashes only — never stored in plaintext). There is no public sign-up page; admins are created from the command line.
 
-On the server where you deploy, set in `.env.local` (never committed):
-
-```
-DATABASE_URL="..."
-SESSION_SECRET="long-random-string"
-```
-
-Generate a strong `SESSION_SECRET`:
-
-```bash
-openssl rand -hex 32
-```
-
-Apply the schema (creates `admin_users` and the other tables if missing):
+Apply the schema once (creates `admin_users` and the other tables if missing):
 
 ```bash
 psql "$DATABASE_URL" -f scripts/schema.sql
@@ -64,11 +99,4 @@ Create an admin user:
 npx dotenv -e .env.local -- npx tsx scripts/create-admin.ts <username> <password>
 ```
 
-Re-running the command with the same username updates its password (upsert). Then build and start the app:
-
-```bash
-npm run build
-npm start
-```
-
-Log in at `/admin/login` with that username and password. The session is a signed cookie valid for 12h, verified in `src/lib/session.ts`.
+Re-running the command with the same username updates its password (upsert). Log in at `/admin/login` with that username and password — the session is a signed cookie valid for 12h, verified in `src/lib/session.ts`.
