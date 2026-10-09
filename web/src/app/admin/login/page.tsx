@@ -15,6 +15,21 @@ export default function LoginPage() {
         <h1 className="mb-8 text-2xl font-medium tracking-tight text-foreground">Admin</h1>
         <label
           className="mb-2 block font-mono text-xs tracking-widest text-muted-foreground"
+          htmlFor="username"
+        >
+          Utilizador
+        </label>
+        <input
+          id="username"
+          name="username"
+          type="text"
+          required
+          autoFocus
+          autoComplete="username"
+          className="mb-6 w-full border-b border-border bg-transparent py-2.5 text-sm text-foreground focus:border-foreground/60 focus:outline-none"
+        />
+        <label
+          className="mb-2 block font-mono text-xs tracking-widest text-muted-foreground"
           htmlFor="password"
         >
           Password
@@ -24,7 +39,7 @@ export default function LoginPage() {
           name="password"
           type="password"
           required
-          autoFocus
+          autoComplete="current-password"
           className="w-full border-b border-border bg-transparent py-2.5 text-sm text-foreground focus:border-foreground/60 focus:outline-none"
         />
         {state.error ? <p className="mt-3 text-sm text-red-400">{state.error}</p> : null}

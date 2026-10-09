@@ -34,3 +34,41 @@ You can check out [the Next.js GitHub repository](https://github.com/vercel/next
 The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
 
 Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+
+## Admin access (local network deploy)
+
+The admin area (`/admin`) is gated by username + password, checked against an `admin_users` table in Postgres (password hashes only — never stored in plaintext). There is no public sign-up page; admins are created from the command line.
+
+On the server where you deploy, set in `.env.local` (never committed):
+
+```
+DATABASE_URL="..."
+SESSION_SECRET="long-random-string"
+```
+
+Generate a strong `SESSION_SECRET`:
+
+```bash
+openssl rand -hex 32
+```
+
+Apply the schema (creates `admin_users` and the other tables if missing):
+
+```bash
+psql "$DATABASE_URL" -f scripts/schema.sql
+```
+
+Create an admin user:
+
+```bash
+npx dotenv -e .env.local -- npx tsx scripts/create-admin.ts <username> <password>
+```
+
+Re-running the command with the same username updates its password (upsert). Then build and start the app:
+
+```bash
+npm run build
+npm start
+```
+
+Log in at `/admin/login` with that username and password. The session is a signed cookie valid for 12h, verified in `src/lib/session.ts`.

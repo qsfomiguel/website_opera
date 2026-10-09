@@ -20,6 +20,12 @@ CREATE TABLE IF NOT EXISTS projects (
 );
 ALTER TABLE projects ADD COLUMN IF NOT EXISTS description_en text NOT NULL DEFAULT '';
 
+CREATE TABLE IF NOT EXISTS admin_users (
+  username text PRIMARY KEY,
+  password_hash text NOT NULL,
+  created_at timestamptz NOT NULL DEFAULT now()
+);
+
 CREATE TABLE IF NOT EXISTS team (
   id text PRIMARY KEY,
   name text NOT NULL,
