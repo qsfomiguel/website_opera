@@ -1,11 +1,11 @@
 import type { Metadata } from "next";
-import { Jost } from "next/font/google";
+import { Roboto_Mono } from "next/font/google";
 import "./globals.css";
 
 import { ScrollProgress } from "@/components/scroll-progress";
 
-const jost = Jost({
-  variable: "--font-jost",
+const robotoMono = Roboto_Mono({
+  variable: "--font-roboto-mono",
   subsets: ["latin"],
   weight: ["300", "400", "500", "600"],
 });
@@ -18,7 +18,7 @@ export const metadata: Metadata = {
 
 export default function RootLayout({ children }: LayoutProps<"/">) {
   return (
-    <html lang="pt" className={`${jost.variable} h-full antialiased`}>
+    <html lang="pt" className={`${robotoMono.variable} h-full antialiased`}>
       <body className="flex min-h-full flex-col bg-background text-foreground">
         {children}
         <ScrollProgress />
