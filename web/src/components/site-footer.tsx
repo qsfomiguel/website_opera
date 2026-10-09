@@ -1,13 +1,13 @@
 import Image from "next/image";
 import Link from "next/link";
 
-import { getPngDimensions } from "@/lib/image-dimensions";
+import { getImageDimensions, isSvg } from "@/lib/image-dimensions";
 import { t, type Locale } from "@/lib/i18n";
 import { getSiteContent } from "@/lib/site-content";
 
 export async function SiteFooter({ locale = "pt" }: { locale?: Locale } = {}) {
   const content = await getSiteContent();
-  const logoDimensions = await getPngDimensions(content.logoUrlLight);
+  const logoDimensions = await getImageDimensions(content.logoUrlLight);
   const ui = t(locale);
   const prefix = locale === "pt" ? "" : "/en";
 
@@ -98,7 +98,9 @@ export async function SiteFooter({ locale = "pt" }: { locale?: Locale } = {}) {
             alt="Opera Studio"
             width={logoDimensions.width}
             height={logoDimensions.height}
-            className="h-7 w-auto object-contain"
+            // A stacked (roughly square) logo needs more height than a one-line wordmark to stay legible.
+            className={`${logoDimensions.height > logoDimensions.width / 2 ? "h-14" : "h-7"} w-auto object-contain`}
+            unoptimized={isSvg(content.logoUrlLight)}
           />
         ) : (
           <span className="text-sm font-medium tracking-[0.15em] text-[#3a3733]">OPERA</span>

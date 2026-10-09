@@ -6,6 +6,9 @@ import { useActionState, useEffect, useRef, useState, useTransition } from "reac
 import { removeLogo, uploadLogo } from "@/app/admin/actions";
 import type { FormState } from "@/app/admin/actions";
 
+// Next.js only serves SVGs through <Image> when optimization is skipped.
+const isSvg = (url: string) => /\.svg($|\?)/i.test(url);
+
 const labelClass = "mb-2 block font-mono text-xs tracking-widest text-muted-foreground";
 
 export function LogoUpload({
@@ -100,7 +103,7 @@ export function LogoUpload({
           <div>
             <div className="relative flex h-16 items-center justify-center rounded bg-[#15130f] px-4">
               {currentUrlDark ? (
-                <Image src={currentUrlDark} alt="Logotipo (cabeçalho)" width={120} height={40} className="h-8 w-auto object-contain" />
+                <Image src={currentUrlDark} alt="Logotipo (cabeçalho)" width={120} height={40} className="h-8 w-auto object-contain" unoptimized={isSvg(currentUrlDark)} />
               ) : null}
             </div>
             <p className="mt-1.5 text-center font-mono text-[11px] text-muted-foreground">Cabeçalho</p>
@@ -108,7 +111,7 @@ export function LogoUpload({
           <div>
             <div className="relative flex h-16 items-center justify-center rounded bg-white px-4">
               {currentUrlLight ? (
-                <Image src={currentUrlLight} alt="Logotipo (rodapé)" width={120} height={40} className="h-8 w-auto object-contain" />
+                <Image src={currentUrlLight} alt="Logotipo (rodapé)" width={120} height={40} className="h-8 w-auto object-contain" unoptimized={isSvg(currentUrlLight)} />
               ) : null}
             </div>
             <p className="mt-1.5 text-center font-mono text-[11px] text-muted-foreground">Rodapé</p>
