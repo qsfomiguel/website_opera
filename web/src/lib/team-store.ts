@@ -80,13 +80,19 @@ export async function moveTeamMember(id: string, direction: "up" | "down"): Prom
   const swapWith = direction === "up" ? idx - 1 : idx + 1;
   if (swapWith < 0 || swapWith >= team.length) return;
 
-  const a = team[idx];
-  const b = team[swapWith];
-  const tmp = a.sortOrder;
-  a.sortOrder = b.sortOrder;
-  b.sortOrder = tmp;
+  // Rows created before ordering existed all share sort_order 0, so swapping
+  // their values would change nothing. Renumber the whole list instead.
+  const reordered = [...team];
+  [reordered[idx], reordered[swapWith]] = [reordered[swapWith], reordered[idx]];
+  const ids = reordered.map((m) => m.id);
+  const orders = reordered.map((_, i) => i);
 
-  await Promise.all([saveTeamMember(a), saveTeamMember(b)]);
+  const sql = getSql();
+  await sql`
+    UPDATE team AS t SET sort_order = v.ord
+    FROM unnest(${ids}::text[], ${orders}::int[]) AS v(id, ord)
+    WHERE t.id = v.id
+  `;
 }
 
 export async function uniqueTeamId(name: string): Promise<string> {
