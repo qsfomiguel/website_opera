@@ -1,0 +1,86 @@
+[
+  {
+    "id": "eduardo-neves",
+    "name": "Eduardo Neves",
+    "role": "Head",
+    "photo": "/team/t1.jpg",
+    "description": ""
+  },
+  {
+    "id": "zinda-baltazar",
+    "name": "Zinda Baltazar",
+    "role": "Partner",
+    "photo": "/team/t2.jpg",
+    "description": ""
+  },
+  {
+    "id": "sofia-fontes",
+    "name": "Sofia Fontes",
+    "role": "Arquiteta",
+    "photo": "/team/t3.jpg",
+    "description": ""
+  },
+  {
+    "id": "claudia-pedroso",
+    "name": "Cláudia Pedroso",
+    "role": "Arquiteta",
+    "photo": "/team/t4.jpg",
+    "description": ""
+  },
+  {
+    "id": "patricia-reis",
+    "name": "Patrícia Reis",
+    "role": "Arquiteta",
+    "photo": "/team/t5.jpg",
+    "description": ""
+  },
+  {
+    "id": "mariana-oliveira",
+    "name": "Mariana Oliveira",
+    "role": "Arquiteta",
+    "photo": "/team/t6.jpg",
+    "description": ""
+  },
+  {
+    "id": "tiago-neves",
+    "name": "Tiago Neves",
+    "role": "Arquiteto",
+    "photo": "/team/t7.jpg",
+    "description": ""
+  },
+  {
+    "id": "diogo-maia",
+    "name": "Diogo Maia",
+    "role": "Arquiteto",
+    "photo": "/team/t8.jpg",
+    "description": ""
+  },
+  {
+    "id": "tomas-oliveira",
+    "name": "Tomás Oliveira",
+    "role": "Arquiteto",
+    "photo": "/team/t9.jpg",
+    "description": ""
+  },
+  {
+    "id": "rafael-ribeiro",
+    "name": "Rafael Ribeiro",
+    "role": "Engenheiro Civil",
+    "photo": "/team/t10.jpg",
+    "description": ""
+  },
+  {
+    "id": "ana-farto",
+    "name": "Ana Farto",
+    "role": "Engenheira da Energia e do Ambiente",
+    "photo": "/team/t11.jpg",
+    "description": ""
+  },
+  {
+    "id": "luis-pombeiro",
+    "name": "Luís Pombeiro",
+    "role": "Engenheiro Agrónomo",
+    "photo": "/team/t12.jpg",
+    "description": ""
+  }
+]

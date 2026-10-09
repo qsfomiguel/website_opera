@@ -1,0 +1,129 @@
+<!doctype html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <script src="./support.js"></script>
+</head>
+<body>
+<x-dc>
+<helmet>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Archivo:wght@400;500;600&family=Frank+Ruhl+Libre:wght@300;400;500&display=swap">
+  <style>
+    :root {
+      --bg: oklch(98% 0.005 90);
+      --bg-alt: oklch(95.5% 0.007 85);
+      --ink: oklch(19% 0.01 55);
+      --ink-soft: oklch(48% 0.012 60);
+      --line: oklch(85% 0.006 85);
+      --accent: oklch(40% 0.05 45);
+    }
+    * { box-sizing: border-box; }
+    body { margin: 0; background: var(--bg); color: var(--ink); font-family: 'Archivo', 'Helvetica Neue', Arial, sans-serif; }
+    a { color: inherit; text-decoration: none; }
+    a.navlink { font-size: 13px; letter-spacing: 0.06em; font-weight: 500; color: var(--ink-soft); }
+    a.navlink:hover, a.navlink.active { color: var(--accent); }
+    .overline { font-size: 11px; letter-spacing: 0.16em; font-weight: 600; color: var(--ink-soft); text-transform: uppercase; }
+    .display { font-family: 'Frank Ruhl Libre', Georgia, serif; font-weight: 400; letter-spacing: -0.01em; }
+    .ph-img { position: relative; overflow: hidden; background: linear-gradient(150deg, oklch(90% 0.006 90), oklch(76% 0.008 85)); }
+    .ph-img::after { content: ""; position: absolute; inset: 0; background: repeating-linear-gradient(135deg, oklch(100% 0 0 / 0.05) 0px, oklch(100% 0 0 / 0.05) 1px, transparent 1px, transparent 14px); }
+    .cap-name { font-size: 15px; font-weight: 500; }
+    .cap-meta { font-size: 12.5px; color: var(--ink-soft); margin-top: 2px; }
+  </style>
+</helmet>
+
+<div style="max-width: 1440px; margin: 0 auto;">
+
+  <header style="position: sticky; top: 0; z-index: 10; display: flex; align-items: center; justify-content: space-between; padding: 22px 48px; background: var(--bg); border-bottom: 1px solid var(--line);">
+    <a href="#" style="font-family: 'Archivo', sans-serif; font-weight: 600; font-size: 15px; letter-spacing: 0.16em;">OPERA</a>
+    <nav style="display: flex; gap: 40px; align-items: center;">
+      <a href="#" class="navlink">PROJETOS</a>
+      <a href="#" class="navlink">ESTÚDIO</a>
+      <a href="#" class="navlink">EQUIPA</a>
+      <a href="#" class="navlink">CONTACTO</a>
+      <a href="#" class="navlink" style="border: 1px solid var(--line); padding: 8px 16px;">EN</a>
+    </nav>
+  </header>
+
+  <section style="display: grid; grid-template-columns: 1.2fr 1fr; gap: 64px; padding: 96px 48px 72px; align-items: end;">
+    <div>
+      <div class="overline" style="margin-bottom: 20px;">ARQUITETURA — ENGENHARIA — REABILITAÇÃO</div>
+      <h1 class="display" style="font-size: clamp(2.6rem, 4.6vw, 4.4rem); line-height: 1.06; margin: 0;">Infraestruturas públicas,<br>construídas para durar.</h1>
+    </div>
+    <p style="font-size: 16px; line-height: 1.7; color: var(--ink-soft); margin: 0 0 4px;">
+      Fundado em 2023 sobre trinta anos de prática em engenharia, o Opera projeta e reabilita habitação e
+      infraestruturas públicas em Portugal e na União Europeia — de piscinas municipais e escolas a unidades
+      de saúde e edifícios históricos — sob um único estúdio, da viabilidade à construção.
+    </p>
+  </section>
+
+  <section style="padding: 0 48px 96px;">
+    <div class="ph-img" style="aspect-ratio: 21 / 9; width: 100%; border: 1px solid var(--line);"></div>
+    <div style="display: flex; justify-content: space-between; margin-top: 16px; padding-bottom: 8px; border-bottom: 1px solid var(--line);">
+      <span class="cap-name">Piscinas do Mar</span>
+      <span class="cap-meta">Oeiras, Portugal</span>
+    </div>
+  </section>
+
+  <section style="padding: 0 48px 112px;">
+    <div style="display: flex; align-items: baseline; justify-content: space-between; margin-bottom: 40px;">
+      <div class="overline">TRABALHOS SELECIONADOS</div>
+      <a href="#" class="navlink">VER TODOS OS PROJETOS →</a>
+    </div>
+    <div style="display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 40px;">
+      <sc-for list="{{selectedWork}}" as="proj" hint-placeholder-count="3">
+        <a href="#" style="display: block;">
+          <div class="ph-img" style="aspect-ratio: 4 / 5;"></div>
+          <div style="margin-top: 14px;">
+            <div class="cap-name">{{proj.name}}</div>
+            <div class="cap-meta">{{proj.location}} · {{proj.category}}</div>
+          </div>
+        </a>
+      </sc-for>
+    </div>
+  </section>
+
+  <section style="padding: 56px 48px 96px; display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 48px; border-top: 1px solid var(--line);">
+    <sc-for list="{{facts}}" as="fact" hint-placeholder-count="3">
+      <div>
+        <div class="display" style="font-size: 30px; margin-bottom: 8px;">{{fact.value}}</div>
+        <div class="overline" style="font-weight: 500;">{{fact.label}}</div>
+      </div>
+    </sc-for>
+  </section>
+
+  <footer style="padding: 64px 48px 40px; border-top: 1px solid var(--line); display: flex; flex-wrap: wrap; justify-content: space-between; gap: 32px;">
+    <div>
+      <div style="font-weight: 600; font-size: 14px; letter-spacing: 0.14em;">OPERA</div>
+      <div style="margin-top: 12px; font-size: 13px; color: var(--ink-soft); line-height: 1.7;">
+        Alameda da Música 27A<br>1750-044 Lisboa, Portugal
+      </div>
+    </div>
+    <div style="font-size: 13px; color: var(--ink-soft); line-height: 1.7;">
+      +351 911 900 978<br>info@operastudio.net
+    </div>
+    <div style="font-size: 13px; color: var(--ink-soft); align-self: flex-end;">© 2026 Opera Studio</div>
+  </footer>
+
+</div>
+
+</x-dc>
+<script data-dc-script data-props='{}'>
+class Component extends DCLogic {
+  renderVals() {
+    return {
+      selectedWork: [
+        { name: 'Piscinas do Mar', location: 'Oeiras', category: 'Equipamentos' },
+        { name: 'Complexo Escolar de Vendas Novas', location: 'Vendas Novas', category: 'Arquitetura' },
+        { name: 'Reabilitação do Palacete', location: 'Viana do Castelo', category: 'Reabilitações' },
+      ],
+      facts: [
+        { value: '2023', label: 'Estúdio fundado' },
+        { value: '50+', label: 'Projetos públicos' },
+        { value: 'PT · UE · KSA', label: 'Mercados ativos' },
+      ],
+    };
+  }
+}
+</script>
+</body>
+</html>

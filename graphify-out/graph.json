@@ -1,0 +1,599 @@
+{
+  "directed": false,
+  "multigraph": false,
+  "graph": {
+    "hyperedges": [
+      {
+        "id": "dc_component_pattern",
+        "label": "Shared DCLogic Component Template Pattern",
+        "nodes": [
+          "main_dc_component",
+          "projectdetail_dc_component",
+          "work_dc_component"
+        ],
+        "relation": "implement",
+        "confidence": "INFERRED",
+        "confidence_score": 0.85,
+        "source_file": "Main.dc.html"
+      },
+      {
+        "id": "piscinas_do_mar_entity",
+        "label": "Piscinas do Mar Project Entity Across Site",
+        "nodes": [
+          "main_dc_piscinas_do_mar",
+          "work_dc_piscinas_do_mar",
+          "projectdetail_dc_piscinas_do_mar"
+        ],
+        "relation": "form",
+        "confidence": "INFERRED",
+        "confidence_score": 0.95,
+        "source_file": "Main.dc.html"
+      }
+    ]
+  },
+  "nodes": [
+    {
+      "label": "Main Page Component (DCLogic)",
+      "file_type": "code",
+      "source_file": "Main.dc.html",
+      "source_location": null,
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null,
+      "id": "main_dc_component",
+      "community": 1,
+      "norm_label": "main page component (dclogic)"
+    },
+    {
+      "label": "selectedWork Data List",
+      "file_type": "code",
+      "source_file": "Main.dc.html",
+      "source_location": null,
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null,
+      "id": "main_dc_selectedwork",
+      "community": 2,
+      "norm_label": "selectedwork data list"
+    },
+    {
+      "label": "facts Data List",
+      "file_type": "code",
+      "source_file": "Main.dc.html",
+      "source_location": null,
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null,
+      "id": "main_dc_facts",
+      "community": 1,
+      "norm_label": "facts data list"
+    },
+    {
+      "label": "Piscinas do Mar (Main selectedWork entry)",
+      "file_type": "code",
+      "source_file": "Main.dc.html",
+      "source_location": null,
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null,
+      "id": "main_dc_piscinas_do_mar",
+      "community": 3,
+      "norm_label": "piscinas do mar (main selectedwork entry)"
+    },
+    {
+      "label": "Complexo Escolar de Vendas Novas (Main selectedWork entry)",
+      "file_type": "code",
+      "source_file": "Main.dc.html",
+      "source_location": null,
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null,
+      "id": "main_dc_complexo_escolar_de_vendas_novas",
+      "community": 2,
+      "norm_label": "complexo escolar de vendas novas (main selectedwork entry)"
+    },
+    {
+      "label": "Reabilita\u00e7\u00e3o do Palacete (Main selectedWork entry)",
+      "file_type": "code",
+      "source_file": "Main.dc.html",
+      "source_location": null,
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null,
+      "id": "main_dc_reabilitacao_do_palacete",
+      "community": 2,
+      "norm_label": "reabilitacao do palacete (main selectedwork entry)"
+    },
+    {
+      "label": "Project Detail Page Component (DCLogic)",
+      "file_type": "code",
+      "source_file": "ProjectDetail.dc.html",
+      "source_location": null,
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null,
+      "id": "projectdetail_dc_component",
+      "community": 1,
+      "norm_label": "project detail page component (dclogic)"
+    },
+    {
+      "label": "gallery Data List",
+      "file_type": "code",
+      "source_file": "ProjectDetail.dc.html",
+      "source_location": null,
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null,
+      "id": "projectdetail_dc_gallery",
+      "community": 1,
+      "norm_label": "gallery data list"
+    },
+    {
+      "label": "Piscinas do Mar Project Detail Page",
+      "file_type": "code",
+      "source_file": "ProjectDetail.dc.html",
+      "source_location": null,
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null,
+      "id": "projectdetail_dc_piscinas_do_mar",
+      "community": 3,
+      "norm_label": "piscinas do mar project detail page"
+    },
+    {
+      "label": "Work Page Component (DCLogic)",
+      "file_type": "code",
+      "source_file": "Work.dc.html",
+      "source_location": null,
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null,
+      "id": "work_dc_component",
+      "community": 1,
+      "norm_label": "work page component (dclogic)"
+    },
+    {
+      "label": "tags Data List (filter categories)",
+      "file_type": "code",
+      "source_file": "Work.dc.html",
+      "source_location": null,
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null,
+      "id": "work_dc_tags",
+      "community": 1,
+      "norm_label": "tags data list (filter categories)"
+    },
+    {
+      "label": "projects Data List",
+      "file_type": "code",
+      "source_file": "Work.dc.html",
+      "source_location": null,
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null,
+      "id": "work_dc_projects",
+      "community": 0,
+      "norm_label": "projects data list"
+    },
+    {
+      "label": "Piscinas do Mar (Work projects entry)",
+      "file_type": "code",
+      "source_file": "Work.dc.html",
+      "source_location": null,
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null,
+      "id": "work_dc_piscinas_do_mar",
+      "community": 3,
+      "norm_label": "piscinas do mar (work projects entry)"
+    },
+    {
+      "label": "Complexo Escolar de Vendas Novas (Work projects entry)",
+      "file_type": "code",
+      "source_file": "Work.dc.html",
+      "source_location": null,
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null,
+      "id": "work_dc_complexo_escolar_de_vendas_novas",
+      "community": 2,
+      "norm_label": "complexo escolar de vendas novas (work projects entry)"
+    },
+    {
+      "label": "Habita\u00e7\u00e3o Municipal de Benavente (Work projects entry)",
+      "file_type": "code",
+      "source_file": "Work.dc.html",
+      "source_location": null,
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null,
+      "id": "work_dc_habitacao_municipal_de_benavente",
+      "community": 0,
+      "norm_label": "habitacao municipal de benavente (work projects entry)"
+    },
+    {
+      "label": "Unidade de Sa\u00fade de Telheiras (Work projects entry)",
+      "file_type": "code",
+      "source_file": "Work.dc.html",
+      "source_location": null,
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null,
+      "id": "work_dc_unidade_de_saude_de_telheiras",
+      "community": 0,
+      "norm_label": "unidade de saude de telheiras (work projects entry)"
+    },
+    {
+      "label": "Pavilh\u00e3o Desportivo \u2014 Campo de Ourique (Work projects entry)",
+      "file_type": "code",
+      "source_file": "Work.dc.html",
+      "source_location": null,
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null,
+      "id": "work_dc_pavilhao_desportivo_campo_de_ourique",
+      "community": 0,
+      "norm_label": "pavilhao desportivo \u2014 campo de ourique (work projects entry)"
+    },
+    {
+      "label": "Parque Arqueol\u00f3gico da Quinta do Almaraz (Work projects entry)",
+      "file_type": "code",
+      "source_file": "Work.dc.html",
+      "source_location": null,
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null,
+      "id": "work_dc_parque_arqueologico_da_quinta_do_almaraz",
+      "community": 0,
+      "norm_label": "parque arqueologico da quinta do almaraz (work projects entry)"
+    },
+    {
+      "label": "Reabilita\u00e7\u00e3o do Palacete (Work projects entry)",
+      "file_type": "code",
+      "source_file": "Work.dc.html",
+      "source_location": null,
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null,
+      "id": "work_dc_reabilitacao_do_palacete",
+      "community": 2,
+      "norm_label": "reabilitacao do palacete (work projects entry)"
+    },
+    {
+      "label": "Habita\u00e7\u00e3o \u2014 Tercena (Work projects entry)",
+      "file_type": "code",
+      "source_file": "Work.dc.html",
+      "source_location": null,
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null,
+      "id": "work_dc_habitacao_tercena",
+      "community": 0,
+      "norm_label": "habitacao \u2014 tercena (work projects entry)"
+    },
+    {
+      "label": "Escola Sttau Monteiro (Work projects entry)",
+      "file_type": "code",
+      "source_file": "Work.dc.html",
+      "source_location": null,
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null,
+      "id": "work_dc_escola_sttau_monteiro",
+      "community": 0,
+      "norm_label": "escola sttau monteiro (work projects entry)"
+    }
+  ],
+  "links": [
+    {
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "Main.dc.html",
+      "source_location": null,
+      "weight": 1.0,
+      "source": "main_dc_component",
+      "target": "main_dc_facts"
+    },
+    {
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "Main.dc.html",
+      "source_location": null,
+      "weight": 1.0,
+      "source": "main_dc_component",
+      "target": "main_dc_selectedwork"
+    },
+    {
+      "relation": "semantically_similar_to",
+      "confidence": "INFERRED",
+      "confidence_score": 0.85,
+      "source_file": "Main.dc.html",
+      "source_location": null,
+      "weight": 1.0,
+      "source": "main_dc_component",
+      "target": "projectdetail_dc_component"
+    },
+    {
+      "relation": "semantically_similar_to",
+      "confidence": "INFERRED",
+      "confidence_score": 0.85,
+      "source_file": "Main.dc.html",
+      "source_location": null,
+      "weight": 1.0,
+      "source": "main_dc_component",
+      "target": "work_dc_component"
+    },
+    {
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "Main.dc.html",
+      "source_location": null,
+      "weight": 1.0,
+      "source": "main_dc_selectedwork",
+      "target": "main_dc_complexo_escolar_de_vendas_novas"
+    },
+    {
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "Main.dc.html",
+      "source_location": null,
+      "weight": 1.0,
+      "source": "main_dc_selectedwork",
+      "target": "main_dc_piscinas_do_mar"
+    },
+    {
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "Main.dc.html",
+      "source_location": null,
+      "weight": 1.0,
+      "source": "main_dc_selectedwork",
+      "target": "main_dc_reabilitacao_do_palacete"
+    },
+    {
+      "relation": "shares_data_with",
+      "confidence": "INFERRED",
+      "confidence_score": 0.95,
+      "source_file": "Main.dc.html",
+      "source_location": null,
+      "weight": 1.0,
+      "source": "main_dc_piscinas_do_mar",
+      "target": "projectdetail_dc_piscinas_do_mar"
+    },
+    {
+      "relation": "shares_data_with",
+      "confidence": "INFERRED",
+      "confidence_score": 0.95,
+      "source_file": "Main.dc.html",
+      "source_location": null,
+      "weight": 1.0,
+      "source": "main_dc_piscinas_do_mar",
+      "target": "work_dc_piscinas_do_mar"
+    },
+    {
+      "relation": "shares_data_with",
+      "confidence": "INFERRED",
+      "confidence_score": 0.95,
+      "source_file": "Main.dc.html",
+      "source_location": null,
+      "weight": 1.0,
+      "source": "main_dc_complexo_escolar_de_vendas_novas",
+      "target": "work_dc_complexo_escolar_de_vendas_novas"
+    },
+    {
+      "relation": "shares_data_with",
+      "confidence": "INFERRED",
+      "confidence_score": 0.95,
+      "source_file": "Main.dc.html",
+      "source_location": null,
+      "weight": 1.0,
+      "source": "main_dc_reabilitacao_do_palacete",
+      "target": "work_dc_reabilitacao_do_palacete"
+    },
+    {
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "ProjectDetail.dc.html",
+      "source_location": null,
+      "weight": 1.0,
+      "source": "projectdetail_dc_component",
+      "target": "projectdetail_dc_gallery"
+    },
+    {
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "ProjectDetail.dc.html",
+      "source_location": null,
+      "weight": 1.0,
+      "source": "projectdetail_dc_component",
+      "target": "projectdetail_dc_piscinas_do_mar"
+    },
+    {
+      "relation": "semantically_similar_to",
+      "confidence": "INFERRED",
+      "confidence_score": 0.85,
+      "source_file": "Work.dc.html",
+      "source_location": null,
+      "weight": 1.0,
+      "source": "work_dc_component",
+      "target": "projectdetail_dc_component"
+    },
+    {
+      "relation": "shares_data_with",
+      "confidence": "INFERRED",
+      "confidence_score": 0.95,
+      "source_file": "Work.dc.html",
+      "source_location": null,
+      "weight": 1.0,
+      "source": "work_dc_piscinas_do_mar",
+      "target": "projectdetail_dc_piscinas_do_mar"
+    },
+    {
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "Work.dc.html",
+      "source_location": null,
+      "weight": 1.0,
+      "source": "work_dc_component",
+      "target": "work_dc_projects"
+    },
+    {
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "Work.dc.html",
+      "source_location": null,
+      "weight": 1.0,
+      "source": "work_dc_component",
+      "target": "work_dc_tags"
+    },
+    {
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "Work.dc.html",
+      "source_location": null,
+      "weight": 1.0,
+      "source": "work_dc_projects",
+      "target": "work_dc_complexo_escolar_de_vendas_novas"
+    },
+    {
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "Work.dc.html",
+      "source_location": null,
+      "weight": 1.0,
+      "source": "work_dc_projects",
+      "target": "work_dc_escola_sttau_monteiro"
+    },
+    {
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "Work.dc.html",
+      "source_location": null,
+      "weight": 1.0,
+      "source": "work_dc_projects",
+      "target": "work_dc_habitacao_municipal_de_benavente"
+    },
+    {
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "Work.dc.html",
+      "source_location": null,
+      "weight": 1.0,
+      "source": "work_dc_projects",
+      "target": "work_dc_habitacao_tercena"
+    },
+    {
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "Work.dc.html",
+      "source_location": null,
+      "weight": 1.0,
+      "source": "work_dc_projects",
+      "target": "work_dc_parque_arqueologico_da_quinta_do_almaraz"
+    },
+    {
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "Work.dc.html",
+      "source_location": null,
+      "weight": 1.0,
+      "source": "work_dc_projects",
+      "target": "work_dc_pavilhao_desportivo_campo_de_ourique"
+    },
+    {
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "Work.dc.html",
+      "source_location": null,
+      "weight": 1.0,
+      "source": "work_dc_projects",
+      "target": "work_dc_piscinas_do_mar"
+    },
+    {
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "Work.dc.html",
+      "source_location": null,
+      "weight": 1.0,
+      "source": "work_dc_projects",
+      "target": "work_dc_reabilitacao_do_palacete"
+    },
+    {
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "Work.dc.html",
+      "source_location": null,
+      "weight": 1.0,
+      "source": "work_dc_projects",
+      "target": "work_dc_unidade_de_saude_de_telheiras"
+    }
+  ],
+  "hyperedges": [
+    {
+      "id": "dc_component_pattern",
+      "label": "Shared DCLogic Component Template Pattern",
+      "nodes": [
+        "main_dc_component",
+        "projectdetail_dc_component",
+        "work_dc_component"
+      ],
+      "relation": "implement",
+      "confidence": "INFERRED",
+      "confidence_score": 0.85,
+      "source_file": "Main.dc.html"
+    },
+    {
+      "id": "piscinas_do_mar_entity",
+      "label": "Piscinas do Mar Project Entity Across Site",
+      "nodes": [
+        "main_dc_piscinas_do_mar",
+        "work_dc_piscinas_do_mar",
+        "projectdetail_dc_piscinas_do_mar"
+      ],
+      "relation": "form",
+      "confidence": "INFERRED",
+      "confidence_score": 0.95,
+      "source_file": "Main.dc.html"
+    }
+  ]
+}

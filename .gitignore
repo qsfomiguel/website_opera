@@ -1,0 +1,10 @@
+# misc
+.DS_Store
+
+# env files / secrets
+.env
+.env.*
+*.pem
+
+# dependencies (web/ has its own .gitignore too)
+node_modules/

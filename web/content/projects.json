@@ -1,0 +1,1802 @@
+[
+  {
+    "id": "piscinas-do-mar",
+    "name": "Piscinas do Mar",
+    "location": "",
+    "category": "Arquitetura",
+    "description": "Projeto das Piscinas do Mar – Oeiras",
+    "images": [
+      "/projects/genera/piscinas-do-mar__0.jpg"
+    ],
+    "featured": true,
+    "featuredOrder": 1,
+    "featuredPhotoCount": 1,
+    "clientName": "",
+    "year": "",
+    "area": "",
+    "budgetEstimate": ""
+  },
+  {
+    "id": "museu-nacional-da-musica",
+    "name": "Museu Nacional da Musica",
+    "location": "",
+    "category": "Arquitetura",
+    "description": "Projetos base do Museu Nacional da Musica no Palacio de Mafra",
+    "images": [
+      "/projects/genera/museu-nacional-da-musica__0.jpg",
+      "/projects/genera/museu-nacional-da-musica__1.jpg",
+      "/projects/genera/museu-nacional-da-musica__2.jpg"
+    ],
+    "featured": true,
+    "featuredOrder": 2,
+    "featuredPhotoCount": 2,
+    "clientName": "",
+    "year": "",
+    "area": "",
+    "budgetEstimate": ""
+  },
+  {
+    "id": "largo-5-de-outubro-oeiras",
+    "name": "nova Centralidade em Oeiras",
+    "location": "",
+    "category": "Reabilitações",
+    "description": "Reabilitação Arquitectónica e Paisagística do centro histórico de Oeiras",
+    "images": [
+      "/projects/genera/largo-5-de-outubro-oeiras__0.jpg",
+      "/projects/genera/largo-5-de-outubro-oeiras__1.jpg",
+      "/projects/genera/largo-5-de-outubro-oeiras__2.jpg",
+      "/projects/genera/largo-5-de-outubro-oeiras__3.jpg",
+      "/projects/genera/largo-5-de-outubro-oeiras__4.jpg",
+      "/projects/genera/largo-5-de-outubro-oeiras__5.jpg"
+    ],
+    "featured": true,
+    "featuredOrder": 3,
+    "featuredPhotoCount": 2,
+    "clientName": "",
+    "year": "",
+    "area": "",
+    "budgetEstimate": ""
+  },
+  {
+    "id": "piazza-carlo-stuparish-milan",
+    "name": "Stuparich Building – Milan",
+    "location": "",
+    "category": "Arquitetura",
+    "description": "Projetos base de Construção de edificios Habitacionais em Milão",
+    "images": [
+      "/projects/genera/piazza-carlo-stuparish-milan__0.jpg",
+      "/projects/genera/piazza-carlo-stuparish-milan__1.jpg",
+      "/projects/genera/piazza-carlo-stuparish-milan__2.jpg",
+      "/projects/genera/piazza-carlo-stuparish-milan__3.jpg"
+    ],
+    "featured": true,
+    "featuredOrder": 4,
+    "featuredPhotoCount": 2,
+    "clientName": "",
+    "year": "",
+    "area": "",
+    "budgetEstimate": ""
+  },
+  {
+    "id": "estacionamento-de-entrecampos",
+    "name": "Estacionamento de Entrecampos",
+    "location": "",
+    "category": "Equipamentos",
+    "description": "Revisão de projeto do novo parque de estacionamento das Forças Armadas em Lisboa",
+    "images": [
+      "/projects/genera/estacionamento-de-entrecampos__0.jpg",
+      "/projects/genera/estacionamento-de-entrecampos__1.jpg",
+      "/projects/genera/estacionamento-de-entrecampos__2.jpg",
+      "/projects/genera/estacionamento-de-entrecampos__3.jpg"
+    ],
+    "featured": true,
+    "featuredOrder": 5,
+    "featuredPhotoCount": 2,
+    "clientName": "",
+    "year": "",
+    "area": "",
+    "budgetEstimate": ""
+  },
+  {
+    "id": "habitacoes-malveira",
+    "name": "Habitações CC MFR02 IHRU",
+    "location": "",
+    "category": "Arquitetura",
+    "description": "Projeto de Hab. em Mafra",
+    "images": [
+      "/projects/genera/habitacoes-malveira__0.jpg",
+      "/projects/genera/habitacoes-malveira__1.jpg"
+    ],
+    "featured": true,
+    "featuredOrder": 6,
+    "featuredPhotoCount": 2,
+    "clientName": "",
+    "year": "",
+    "area": "",
+    "budgetEstimate": ""
+  },
+  {
+    "id": "projeto-das-piscinas-de-vialonga-em-vila-franca-de-xira",
+    "name": "Piscinas de Vialonga",
+    "location": "",
+    "category": "Arquitetura",
+    "description": "Projeto das Piscinas de Vialonga",
+    "images": [
+      "/projects/genera/projeto-das-piscinas-de-vialonga-em-vila-franca-de-xira__0.jpg",
+      "/projects/genera/projeto-das-piscinas-de-vialonga-em-vila-franca-de-xira__1.jpg",
+      "/projects/genera/projeto-das-piscinas-de-vialonga-em-vila-franca-de-xira__2.jpg"
+    ],
+    "featured": false,
+    "featuredOrder": null,
+    "featuredPhotoCount": 3,
+    "clientName": "",
+    "year": "",
+    "area": "",
+    "budgetEstimate": ""
+  },
+  {
+    "id": "complexo-escolar-azoia",
+    "name": "Complexo Escolar St. Iria de Azoia",
+    "location": "",
+    "category": "Reabilitações",
+    "description": "Reabilitação Escola Azoia",
+    "images": [
+      "/projects/genera/complexo-escolar-azoia__0.jpg"
+    ],
+    "featured": false,
+    "featuredOrder": null,
+    "featuredPhotoCount": 1,
+    "clientName": "",
+    "year": "",
+    "area": "",
+    "budgetEstimate": ""
+  },
+  {
+    "id": "complexo-escolar-sttau-monteiro-loures",
+    "name": "Complexo Escolar Sttau Monteiro",
+    "location": "",
+    "category": "Reabilitações",
+    "description": "Reabilitação Escola Sttau Monteiro",
+    "images": [
+      "/projects/genera/complexo-escolar-sttau-monteiro-loures__0.jpg"
+    ],
+    "featured": false,
+    "featuredOrder": null,
+    "featuredPhotoCount": 1,
+    "clientName": "",
+    "year": "",
+    "area": "",
+    "budgetEstimate": ""
+  },
+  {
+    "id": "complexo-escolar-loures-sacavem",
+    "name": "Complexo Escolar Sacavém",
+    "location": "",
+    "category": "Reabilitações",
+    "description": "Reabilitação Escola Sacavém",
+    "images": [
+      "/projects/genera/complexo-escolar-loures-sacavem__0.jpg",
+      "/projects/genera/complexo-escolar-loures-sacavem__1.jpg"
+    ],
+    "featured": false,
+    "featuredOrder": null,
+    "featuredPhotoCount": 2,
+    "clientName": "",
+    "year": "",
+    "area": "",
+    "budgetEstimate": ""
+  },
+  {
+    "id": "messe-das-antas-eme",
+    "name": "Messe das Antas EME",
+    "location": "",
+    "category": "Equipamentos",
+    "description": "Requalificação da Messe no Porto",
+    "images": [
+      "/projects/genera/messe-das-antas-eme__0.jpg"
+    ],
+    "featured": false,
+    "featuredOrder": null,
+    "featuredPhotoCount": 1,
+    "clientName": "",
+    "year": "",
+    "area": "",
+    "budgetEstimate": ""
+  },
+  {
+    "id": "messe-da-matinha-eme",
+    "name": "Messe da Matinha EME",
+    "location": "",
+    "category": "Equipamentos",
+    "description": "Requalificação da Messe em Leiria",
+    "images": [
+      "/projects/genera/messe-da-matinha-eme__0.jpg"
+    ],
+    "featured": false,
+    "featuredOrder": null,
+    "featuredPhotoCount": 1,
+    "clientName": "",
+    "year": "",
+    "area": "",
+    "budgetEstimate": ""
+  },
+  {
+    "id": "messe-da-atena-eme",
+    "name": "Messe da Atena EME",
+    "location": "",
+    "category": "Equipamentos",
+    "description": "Requalificação da Messe em Lisboa",
+    "images": [
+      "/projects/genera/messe-da-atena-eme__0.jpg"
+    ],
+    "featured": false,
+    "featuredOrder": null,
+    "featuredPhotoCount": 1,
+    "clientName": "",
+    "year": "",
+    "area": "",
+    "budgetEstimate": ""
+  },
+  {
+    "id": "habitacoes-urbanizacao-do-pinheiro",
+    "name": "Habitações CC MFR01 IHRU",
+    "location": "",
+    "category": "Arquitetura",
+    "description": "Projeto de Hab. Mafra",
+    "images": [
+      "/projects/genera/habitacoes-urbanizacao-do-pinheiro__0.jpg",
+      "/projects/genera/habitacoes-urbanizacao-do-pinheiro__1.jpg"
+    ],
+    "featured": false,
+    "featuredOrder": null,
+    "featuredPhotoCount": 2,
+    "clientName": "",
+    "year": "",
+    "area": "",
+    "budgetEstimate": ""
+  },
+  {
+    "id": "habitacoes-cc-benavente",
+    "name": "Habitações CC Benavente",
+    "location": "",
+    "category": "Arquitetura",
+    "description": "Projeto de loteamento e habitações",
+    "images": [
+      "/projects/genera/habitacoes-cc-benavente__0.jpg"
+    ],
+    "featured": false,
+    "featuredOrder": null,
+    "featuredPhotoCount": 1,
+    "clientName": "",
+    "year": "",
+    "area": "",
+    "budgetEstimate": ""
+  },
+  {
+    "id": "escola-pedro-nunes-em-alcacer",
+    "name": "Escola Pedro Nunes em Alcácer",
+    "location": "",
+    "category": "Reabilitações",
+    "description": "Reabilitação do complexo escolar",
+    "images": [
+      "/projects/genera/escola-pedro-nunes-em-alcacer__0.jpg"
+    ],
+    "featured": false,
+    "featuredOrder": null,
+    "featuredPhotoCount": 1,
+    "clientName": "",
+    "year": "",
+    "area": "",
+    "budgetEstimate": ""
+  },
+  {
+    "id": "revisao-hub-do-mar-doca-de-pedroucos-lisboa",
+    "name": "Novo Hub do Mar em Lisboa",
+    "location": "",
+    "category": "Arquitetura",
+    "description": "Hub do Mar – Revisão de Projetos",
+    "images": [
+      "/projects/genera/revisao-hub-do-mar-doca-de-pedroucos-lisboa__0.jpg"
+    ],
+    "featured": false,
+    "featuredOrder": null,
+    "featuredPhotoCount": 1,
+    "clientName": "",
+    "year": "",
+    "area": "",
+    "budgetEstimate": ""
+  },
+  {
+    "id": "revisao-pavilhao-desportivo-de-sao-domingos-de-benfica-lisboa",
+    "name": "Depor de Benfica em Lisboa",
+    "location": "",
+    "category": "Arquitetura",
+    "description": "Depor Benfica – Revisão de Projetos",
+    "images": [
+      "/projects/genera/revisao-pavilhao-desportivo-de-sao-domingos-de-benfica-lisboa__0.jpg"
+    ],
+    "featured": false,
+    "featuredOrder": null,
+    "featuredPhotoCount": 1,
+    "clientName": "",
+    "year": "",
+    "area": "",
+    "budgetEstimate": ""
+  },
+  {
+    "id": "habitacao-casal-do-deserto",
+    "name": "Habitações em Oeiras",
+    "location": "",
+    "category": "Arquitetura",
+    "description": "Projeto Hab. Deserto",
+    "images": [
+      "/projects/genera/habitacao-casal-do-deserto__0.jpg",
+      "/projects/genera/habitacao-casal-do-deserto__1.jpg",
+      "/projects/genera/habitacao-casal-do-deserto__2.jpg"
+    ],
+    "featured": false,
+    "featuredOrder": null,
+    "featuredPhotoCount": 2,
+    "clientName": "",
+    "year": "",
+    "area": "",
+    "budgetEstimate": ""
+  },
+  {
+    "id": "habitacao-matosinhos",
+    "name": "Habitações em Matosinhos",
+    "location": "",
+    "category": "Arquitetura",
+    "description": "Projeto de Hab. em Matosinhos",
+    "images": [
+      "/projects/genera/habitacao-matosinhos__0.jpg",
+      "/projects/genera/habitacao-matosinhos__1.jpg",
+      "/projects/genera/habitacao-matosinhos__2.jpg",
+      "/projects/genera/habitacao-matosinhos__3.jpg"
+    ],
+    "featured": false,
+    "featuredOrder": null,
+    "featuredPhotoCount": 3,
+    "clientName": "",
+    "year": "",
+    "area": "",
+    "budgetEstimate": ""
+  },
+  {
+    "id": "pavilhao-desportivo-campo-de-ourique",
+    "name": "Depor Campo de Ourique",
+    "location": "",
+    "category": "Equipamentos",
+    "description": "Projeto do Pavilhão Desportivo Lisboa",
+    "images": [
+      "/projects/genera/pavilhao-desportivo-campo-de-ourique__0.jpg",
+      "/projects/genera/pavilhao-desportivo-campo-de-ourique__1.jpg",
+      "/projects/genera/pavilhao-desportivo-campo-de-ourique__2.jpg",
+      "/projects/genera/pavilhao-desportivo-campo-de-ourique__3.jpg"
+    ],
+    "featured": false,
+    "featuredOrder": null,
+    "featuredPhotoCount": 2,
+    "clientName": "",
+    "year": "",
+    "area": "",
+    "budgetEstimate": ""
+  },
+  {
+    "id": "habitacao-tercena",
+    "name": "Habitações em Oeiras",
+    "location": "",
+    "category": "Arquitetura",
+    "description": "Projeto de Hab. Tercena",
+    "images": [
+      "/projects/genera/habitacao-tercena__0.jpg",
+      "/projects/genera/habitacao-tercena__1.jpg"
+    ],
+    "featured": false,
+    "featuredOrder": null,
+    "featuredPhotoCount": 2,
+    "clientName": "",
+    "year": "",
+    "area": "",
+    "budgetEstimate": ""
+  },
+  {
+    "id": "habitacoes-horta",
+    "name": "Habitações na Horta",
+    "location": "",
+    "category": "Arquitetura",
+    "description": "Projeto de Hab. nos Açores",
+    "images": [
+      "/projects/genera/habitacoes-horta__0.jpg",
+      "/projects/genera/habitacoes-horta__1.jpg",
+      "/projects/genera/habitacoes-horta__2.jpg"
+    ],
+    "featured": false,
+    "featuredOrder": null,
+    "featuredPhotoCount": 2,
+    "clientName": "",
+    "year": "",
+    "area": "",
+    "budgetEstimate": ""
+  },
+  {
+    "id": "palacio-do-freixo",
+    "name": "Palácio do Freixo",
+    "location": "",
+    "category": "Reabilitações",
+    "description": "Projetos de Reabilitação e Construção do Palácio e Pousada Histórica do Freixo, Porto",
+    "images": [
+      "/projects/genera/palacio-do-freixo__0.jpg",
+      "/projects/genera/palacio-do-freixo__1.jpg",
+      "/projects/genera/palacio-do-freixo__2.jpg",
+      "/projects/genera/palacio-do-freixo__3.jpg",
+      "/projects/genera/palacio-do-freixo__4.jpg",
+      "/projects/genera/palacio-do-freixo__5.jpg",
+      "/projects/genera/palacio-do-freixo__6.jpg",
+      "/projects/genera/palacio-do-freixo__7.jpg",
+      "/projects/genera/palacio-do-freixo__8.jpg"
+    ],
+    "featured": false,
+    "featuredOrder": null,
+    "featuredPhotoCount": 2,
+    "clientName": "",
+    "year": "",
+    "area": "",
+    "budgetEstimate": ""
+  },
+  {
+    "id": "reabilitacao-escola-sobral",
+    "name": "Reabilitação Escola Sobral",
+    "location": "",
+    "category": "Reabilitações",
+    "description": "Projeto de Reabilitação total da Escola do Sobral da Abelheira – C.M. Mafra.",
+    "images": [
+      "/projects/genera/reabilitacao-escola-sobral__0.jpg",
+      "/projects/genera/reabilitacao-escola-sobral__1.jpg",
+      "/projects/genera/reabilitacao-escola-sobral__2.jpg",
+      "/projects/genera/reabilitacao-escola-sobral__3.jpg",
+      "/projects/genera/reabilitacao-escola-sobral__4.jpg"
+    ],
+    "featured": false,
+    "featuredOrder": null,
+    "featuredPhotoCount": 2,
+    "clientName": "",
+    "year": "",
+    "area": "",
+    "budgetEstimate": ""
+  },
+  {
+    "id": "parque-arqueologico-quinta-do-almaraz",
+    "name": "Parque Arqueológico do Almaraz",
+    "location": "",
+    "category": "Equipamentos",
+    "description": "Projeto de Equipamento em Almada",
+    "images": [
+      "/projects/genera/parque-arqueologico-quinta-do-almaraz__0.jpg",
+      "/projects/genera/parque-arqueologico-quinta-do-almaraz__1.jpg",
+      "/projects/genera/parque-arqueologico-quinta-do-almaraz__2.jpg",
+      "/projects/genera/parque-arqueologico-quinta-do-almaraz__3.jpg"
+    ],
+    "featured": false,
+    "featuredOrder": null,
+    "featuredPhotoCount": 2,
+    "clientName": "",
+    "year": "",
+    "area": "",
+    "budgetEstimate": ""
+  },
+  {
+    "id": "hotel-porto-santo",
+    "name": "Hotel Porto Santo",
+    "location": "",
+    "category": "Arquitetura",
+    "description": "Madeira Pestana ITI| Hotel Porto Santo na Madeira com 221 habitações, piscinas de água natural e jardins tropicais; empreendimento com 30.000 m2 e excelente inserção na ‘praia dourada’. [arq. D. Sinclair]",
+    "images": [
+      "/projects/genera/hotel-porto-santo__0.jpg",
+      "/projects/genera/hotel-porto-santo__1.jpg",
+      "/projects/genera/hotel-porto-santo__2.jpg"
+    ],
+    "featured": false,
+    "featuredOrder": null,
+    "featuredPhotoCount": 2,
+    "clientName": "",
+    "year": "",
+    "area": "",
+    "budgetEstimate": ""
+  },
+  {
+    "id": "hotel-promenade",
+    "name": "Hotel Promenade no Funchal",
+    "location": "",
+    "category": "Arquitetura",
+    "description": "Projetos de Construção do Hotel Promenade",
+    "images": [
+      "/projects/genera/hotel-promenade__0.jpg",
+      "/projects/genera/hotel-promenade__1.jpg",
+      "/projects/genera/hotel-promenade__2.jpg"
+    ],
+    "featured": false,
+    "featuredOrder": null,
+    "featuredPhotoCount": 2,
+    "clientName": "",
+    "year": "",
+    "area": "",
+    "budgetEstimate": ""
+  },
+  {
+    "id": "palacio-vale-flor",
+    "name": "Palácio de Vale Flor",
+    "location": "",
+    "category": "Reabilitações",
+    "description": "Projetos de Reabilitação e Construção do Palácio Vale Flor Lisboa.",
+    "images": [
+      "/projects/genera/palacio-vale-flor__0.jpg",
+      "/projects/genera/palacio-vale-flor__1.jpg",
+      "/projects/genera/palacio-vale-flor__2.jpg",
+      "/projects/genera/palacio-vale-flor__3.jpg",
+      "/projects/genera/palacio-vale-flor__4.jpg"
+    ],
+    "featured": false,
+    "featuredOrder": null,
+    "featuredPhotoCount": 2,
+    "clientName": "",
+    "year": "",
+    "area": "",
+    "budgetEstimate": ""
+  },
+  {
+    "id": "palacete-das-abrunhosas",
+    "name": "Palácio das Abrunhosas",
+    "location": "",
+    "category": "Reabilitações",
+    "description": "Projetos de Reabilitação do Palacete das Abrunhosas, Viana do Castelo",
+    "images": [
+      "/projects/genera/palacete-das-abrunhosas__0.jpg",
+      "/projects/genera/palacete-das-abrunhosas__1.jpg",
+      "/projects/genera/palacete-das-abrunhosas__2.jpg",
+      "/projects/genera/palacete-das-abrunhosas__3.jpg",
+      "/projects/genera/palacete-das-abrunhosas__4.jpg",
+      "/projects/genera/palacete-das-abrunhosas__5.jpg"
+    ],
+    "featured": false,
+    "featuredOrder": null,
+    "featuredPhotoCount": 2,
+    "clientName": "",
+    "year": "",
+    "area": "",
+    "budgetEstimate": ""
+  },
+  {
+    "id": "habitacoes-ermesinde",
+    "name": "Habitações em Ermesinde",
+    "location": "",
+    "category": "Arquitetura",
+    "description": "Projeto de Hab. em Valongo",
+    "images": [
+      "/projects/genera/habitacoes-ermesinde__0.jpg",
+      "/projects/genera/habitacoes-ermesinde__1.jpg"
+    ],
+    "featured": false,
+    "featuredOrder": null,
+    "featuredPhotoCount": 2,
+    "clientName": "",
+    "year": "",
+    "area": "",
+    "budgetEstimate": ""
+  },
+  {
+    "id": "reabilitacao-pontinha",
+    "name": "Habitações na Pontinha",
+    "location": "",
+    "category": "Reabilitações",
+    "description": "Projeto de Reabilitação em Odivelas",
+    "images": [
+      "/projects/genera/reabilitacao-pontinha__0.jpg",
+      "/projects/genera/reabilitacao-pontinha__1.jpg",
+      "/projects/genera/reabilitacao-pontinha__2.jpg"
+    ],
+    "featured": false,
+    "featuredOrder": null,
+    "featuredPhotoCount": 2,
+    "clientName": "",
+    "year": "",
+    "area": "",
+    "budgetEstimate": ""
+  },
+  {
+    "id": "ponte_d_luis_i",
+    "name": "Ponte D. Luiz I",
+    "location": "",
+    "category": "Arquitetura",
+    "description": "Ponte D. Luiz I, Metro do Porto | Projeto de Electrificação e Iluminação Pública. [arq. Souto de Moura]",
+    "images": [
+      "/projects/genera/ponte_d_luis_i__0.jpg",
+      "/projects/genera/ponte_d_luis_i__1.jpg",
+      "/projects/genera/ponte_d_luis_i__2.jpg"
+    ],
+    "featured": false,
+    "featuredOrder": null,
+    "featuredPhotoCount": 2,
+    "clientName": "",
+    "year": "",
+    "area": "",
+    "budgetEstimate": ""
+  },
+  {
+    "id": "museu-25-de-abril",
+    "name": "Museu 25 de Abril",
+    "location": "",
+    "category": "Arquitetura",
+    "description": "Projeto do Museu de Abril e dos Valores Universais MAVU",
+    "images": [
+      "/projects/genera/museu-25-de-abril__0.jpg",
+      "/projects/genera/museu-25-de-abril__1.jpg",
+      "/projects/genera/museu-25-de-abril__2.jpg",
+      "/projects/genera/museu-25-de-abril__3.jpg"
+    ],
+    "featured": false,
+    "featuredOrder": null,
+    "featuredPhotoCount": 2,
+    "clientName": "",
+    "year": "",
+    "area": "",
+    "budgetEstimate": ""
+  },
+  {
+    "id": "urbanizacao-de-entrecampos",
+    "name": "Urbanização de Entrecampos",
+    "location": "",
+    "category": "Arquitetura",
+    "description": "Revisão de projeto do Paisagismo, Vias e Infraestruturas da urbanização",
+    "images": [
+      "/projects/genera/urbanizacao-de-entrecampos__0.jpg"
+    ],
+    "featured": false,
+    "featuredOrder": null,
+    "featuredPhotoCount": 1,
+    "clientName": "",
+    "year": "",
+    "area": "",
+    "budgetEstimate": ""
+  },
+  {
+    "id": "multiusos-abrantes",
+    "name": "Multiusos em Abrantes",
+    "location": "",
+    "category": "Arquitetura",
+    "description": "Projeto de reconversão do Antigo Mercado Municipal de Abrantes em Multiusos",
+    "images": [
+      "/projects/genera/multiusos-abrantes__0.jpg",
+      "/projects/genera/multiusos-abrantes__1.jpg",
+      "/projects/genera/multiusos-abrantes__2.jpg",
+      "/projects/genera/multiusos-abrantes__3.jpg"
+    ],
+    "featured": false,
+    "featuredOrder": null,
+    "featuredPhotoCount": 2,
+    "clientName": "",
+    "year": "",
+    "area": "",
+    "budgetEstimate": ""
+  },
+  {
+    "id": "habitacao-coletiva-em-matosinhos",
+    "name": "Habitação Coletiva em Matosinhos",
+    "location": "",
+    "category": "Arquitetura",
+    "description": "Projetos de Habitação Coletiva em Custoias, São Gens, Padrão, Estação e Austrálias – Matosinhos",
+    "images": [
+      "/projects/genera/habitacao-coletiva-em-matosinhos__0.jpg",
+      "/projects/genera/habitacao-coletiva-em-matosinhos__1.jpg",
+      "/projects/genera/habitacao-coletiva-em-matosinhos__2.jpg",
+      "/projects/genera/habitacao-coletiva-em-matosinhos__3.jpg"
+    ],
+    "featured": false,
+    "featuredOrder": null,
+    "featuredPhotoCount": 2,
+    "clientName": "",
+    "year": "",
+    "area": "",
+    "budgetEstimate": ""
+  },
+  {
+    "id": "habitacoes-bairro-flamenga",
+    "name": "Habitações Bairro Flamenga",
+    "location": "",
+    "category": "Arquitetura",
+    "description": "Revisão de projeto dos edifícios e arranjos exteriores de Barro da Flamenga, Marvila",
+    "images": [
+      "/projects/genera/habitacoes-bairro-flamenga__0.jpg",
+      "/projects/genera/habitacoes-bairro-flamenga__1.jpg",
+      "/projects/genera/habitacoes-bairro-flamenga__2.jpg",
+      "/projects/genera/habitacoes-bairro-flamenga__3.jpg"
+    ],
+    "featured": false,
+    "featuredOrder": null,
+    "featuredPhotoCount": 2,
+    "clientName": "",
+    "year": "",
+    "area": "",
+    "budgetEstimate": ""
+  },
+  {
+    "id": "habitacoes-bairro-alfinetes",
+    "name": "Habitações Bairro Alfinetes",
+    "location": "",
+    "category": "Arquitetura",
+    "description": "Revisão de projeto dos edifícios e arranjos exteriores de Barro dos Alfinetes, Marvila",
+    "images": [
+      "/projects/genera/habitacoes-bairro-alfinetes__0.jpg",
+      "/projects/genera/habitacoes-bairro-alfinetes__1.jpg",
+      "/projects/genera/habitacoes-bairro-alfinetes__2.jpg",
+      "/projects/genera/habitacoes-bairro-alfinetes__3.jpg"
+    ],
+    "featured": false,
+    "featuredOrder": null,
+    "featuredPhotoCount": 2,
+    "clientName": "",
+    "year": "",
+    "area": "",
+    "budgetEstimate": ""
+  },
+  {
+    "id": "projeto-intermodal-aveiro",
+    "name": "Projeto Intermodal Aveiro",
+    "location": "",
+    "category": "Equipamentos",
+    "description": "Projeto do Terminal Intermodal, Ferrovias e Rodovias do Porto de Aveiro",
+    "images": [
+      "/projects/genera/projeto-intermodal-aveiro__0.jpg",
+      "/projects/genera/projeto-intermodal-aveiro__1.jpg",
+      "/projects/genera/projeto-intermodal-aveiro__2.jpg",
+      "/projects/genera/projeto-intermodal-aveiro__3.jpg"
+    ],
+    "featured": false,
+    "featuredOrder": null,
+    "featuredPhotoCount": 2,
+    "clientName": "",
+    "year": "",
+    "area": "",
+    "budgetEstimate": ""
+  },
+  {
+    "id": "complexo_lng",
+    "name": "Complexo LNG no Soyo",
+    "location": "",
+    "category": "Arquitetura",
+    "description": "Porto do Soyo, Angola LNG| Projetos de Engenharia dos edifícios de controlo dos terminais marítimos do complexo angolaLNG; classificado como credor de carbono pela UN. [arq. T. Wilcox]",
+    "images": [
+      "/projects/genera/complexo_lng__0.jpg",
+      "/projects/genera/complexo_lng__1.jpg",
+      "/projects/genera/complexo_lng__2.jpg",
+      "/projects/genera/complexo_lng__3.jpg"
+    ],
+    "featured": false,
+    "featuredOrder": null,
+    "featuredPhotoCount": 2,
+    "clientName": "",
+    "year": "",
+    "area": "",
+    "budgetEstimate": ""
+  },
+  {
+    "id": "edificio-matriz-de-ermesinde",
+    "name": "Edificio Misto Matriz",
+    "location": "",
+    "category": "Arquitetura",
+    "description": "Projetos de execução do edifício multiserviços na praça da Igreja Matriz em Ermesinde",
+    "images": [
+      "/projects/genera/edificio-matriz-de-ermesinde__0.jpg",
+      "/projects/genera/edificio-matriz-de-ermesinde__1.jpg",
+      "/projects/genera/edificio-matriz-de-ermesinde__2.jpg"
+    ],
+    "featured": false,
+    "featuredOrder": null,
+    "featuredPhotoCount": 2,
+    "clientName": "",
+    "year": "",
+    "area": "",
+    "budgetEstimate": ""
+  },
+  {
+    "id": "projetos-base-armazem-geneve",
+    "name": "Warehouse Depot – Geneve",
+    "location": "",
+    "category": "Arquitetura",
+    "description": "Projetos base de Edifico Industrial e Armzéns em Geneve",
+    "images": [
+      "/projects/genera/projetos-base-armazem-geneve__0.jpg",
+      "/projects/genera/projetos-base-armazem-geneve__1.jpg"
+    ],
+    "featured": false,
+    "featuredOrder": null,
+    "featuredPhotoCount": 2,
+    "clientName": "",
+    "year": "",
+    "area": "",
+    "budgetEstimate": ""
+  },
+  {
+    "id": "marques-de-abrantes-lisboa",
+    "name": "Parque Marquês de Abrantes",
+    "location": "",
+    "category": "Equipamentos",
+    "description": "Projetos do parque em Marquês de Abrantes, Lisboa.",
+    "images": [
+      "/projects/genera/marques-de-abrantes-lisboa__0.jpg",
+      "/projects/genera/marques-de-abrantes-lisboa__1.jpg",
+      "/projects/genera/marques-de-abrantes-lisboa__2.jpg",
+      "/projects/genera/marques-de-abrantes-lisboa__3.jpg"
+    ],
+    "featured": false,
+    "featuredOrder": null,
+    "featuredPhotoCount": 2,
+    "clientName": "",
+    "year": "",
+    "area": "",
+    "budgetEstimate": ""
+  },
+  {
+    "id": "unidade-saude-telheiras",
+    "name": "Unidade de Telheiras em Lisboa",
+    "location": "",
+    "category": "Arquitetura",
+    "description": "Projetos base de construção da Unidade de Saúde de Telheiras, Lisboa.",
+    "images": [
+      "/projects/genera/unidade-saude-telheiras__0.jpg",
+      "/projects/genera/unidade-saude-telheiras__1.jpg",
+      "/projects/genera/unidade-saude-telheiras__2.jpg"
+    ],
+    "featured": false,
+    "featuredOrder": null,
+    "featuredPhotoCount": 2,
+    "clientName": "",
+    "year": "",
+    "area": "",
+    "budgetEstimate": ""
+  },
+  {
+    "id": "centro-de-saude-da-lapa",
+    "name": "Unidade da Lapa em Lisboa",
+    "location": "",
+    "category": "Arquitetura",
+    "description": "Projetos base de Construção da Unidade de Saúde da Lapa, Lisboa",
+    "images": [
+      "/projects/genera/centro-de-saude-da-lapa__0.jpg",
+      "/projects/genera/centro-de-saude-da-lapa__1.jpg",
+      "/projects/genera/centro-de-saude-da-lapa__2.jpg"
+    ],
+    "featured": false,
+    "featuredOrder": null,
+    "featuredPhotoCount": 2,
+    "clientName": "",
+    "year": "",
+    "area": "",
+    "budgetEstimate": ""
+  },
+  {
+    "id": "ana-aeroportos",
+    "name": "ANA Aeroportos continente e ilhas",
+    "location": "",
+    "category": "Engenharia",
+    "description": "Auditoria energética dos 10 aeroportos da ANA e certificação energética dos 37 grandes edifícios de serviços que incluíram o maior edifício do pais, o Terminal T1 do aeroporto de Lisboa com 392.151m2.",
+    "images": [
+      "/projects/genera/ana-aeroportos__0.jpg",
+      "/projects/genera/ana-aeroportos__1.jpg",
+      "/projects/genera/ana-aeroportos__2.jpg",
+      "/projects/genera/ana-aeroportos__3.jpg",
+      "/projects/genera/ana-aeroportos__4.jpg",
+      "/projects/genera/ana-aeroportos__5.jpg",
+      "/projects/genera/ana-aeroportos__6.jpg",
+      "/projects/genera/ana-aeroportos__7.jpg",
+      "/projects/genera/ana-aeroportos__8.jpg",
+      "/projects/genera/ana-aeroportos__9.jpg",
+      "/projects/genera/ana-aeroportos__10.jpg",
+      "/projects/genera/ana-aeroportos__11.jpg"
+    ],
+    "featured": false,
+    "featuredOrder": null,
+    "featuredPhotoCount": 2,
+    "clientName": "",
+    "year": "",
+    "area": "",
+    "budgetEstimate": ""
+  },
+  {
+    "id": "chluc-em-lisboa",
+    "name": "CHLUC em Lisboa",
+    "location": "",
+    "category": "Reabilitações",
+    "description": "Reabilitação dos Hospitais Curry Cabral , Dona Estefânia e Maternidade Alfredo da Costa",
+    "images": [
+      "/projects/genera/chluc-em-lisboa__0.jpg",
+      "/projects/genera/chluc-em-lisboa__1.jpg",
+      "/projects/genera/chluc-em-lisboa__2.jpg",
+      "/projects/genera/chluc-em-lisboa__3.jpg",
+      "/projects/genera/chluc-em-lisboa__4.jpg",
+      "/projects/genera/chluc-em-lisboa__5.jpg"
+    ],
+    "featured": false,
+    "featuredOrder": null,
+    "featuredPhotoCount": 2,
+    "clientName": "",
+    "year": "",
+    "area": "",
+    "budgetEstimate": ""
+  },
+  {
+    "id": "edificio-de-servicos-defensores-chaves",
+    "name": "Presidência do Conselho de Ministros",
+    "location": "",
+    "category": "Engenharia",
+    "description": "auditoria técnica ao edifício da Presidência do Conselho de Ministros e da Segurança do Estado em Lisboa",
+    "images": [
+      "/projects/genera/edificio-de-servicos-defensores-chaves__0.jpg",
+      "/projects/genera/edificio-de-servicos-defensores-chaves__1.jpg",
+      "/projects/genera/edificio-de-servicos-defensores-chaves__2.jpg",
+      "/projects/genera/edificio-de-servicos-defensores-chaves__3.jpg",
+      "/projects/genera/edificio-de-servicos-defensores-chaves__4.jpg",
+      "/projects/genera/edificio-de-servicos-defensores-chaves__5.jpg"
+    ],
+    "featured": false,
+    "featuredOrder": null,
+    "featuredPhotoCount": 2,
+    "clientName": "",
+    "year": "",
+    "area": "",
+    "budgetEstimate": ""
+  },
+  {
+    "id": "agencia-portuguesa-do-ambiente-porto",
+    "name": "Agência Portuguesa do Ambiente",
+    "location": "",
+    "category": "Engenharia",
+    "description": "Auditoria energética da Agência Portuguesa do Ambiente, Porto",
+    "images": [
+      "/projects/genera/agencia-portuguesa-do-ambiente-porto__0.jpg",
+      "/projects/genera/agencia-portuguesa-do-ambiente-porto__1.jpg",
+      "/projects/genera/agencia-portuguesa-do-ambiente-porto__2.jpg"
+    ],
+    "featured": false,
+    "featuredOrder": null,
+    "featuredPhotoCount": 2,
+    "clientName": "",
+    "year": "",
+    "area": "",
+    "budgetEstimate": ""
+  },
+  {
+    "id": "sce-caramulo",
+    "name": "Hotel & SPA, Caramulo",
+    "location": "",
+    "category": "Engenharia",
+    "description": "Auditoria energética do Golden Tulip Caramulo Hotel & SPA, Caramulo",
+    "images": [
+      "/projects/genera/sce-caramulo__0.jpg",
+      "/projects/genera/sce-caramulo__1.jpg",
+      "/projects/genera/sce-caramulo__2.jpg",
+      "/projects/genera/sce-caramulo__3.jpg",
+      "/projects/genera/sce-caramulo__4.jpg",
+      "/projects/genera/sce-caramulo__5.jpg"
+    ],
+    "featured": false,
+    "featuredOrder": null,
+    "featuredPhotoCount": 2,
+    "clientName": "",
+    "year": "",
+    "area": "",
+    "budgetEstimate": ""
+  },
+  {
+    "id": "chtv-em-viseu",
+    "name": "CHTV em Viseu",
+    "location": "",
+    "category": "Arquitetura",
+    "description": "Projetos das centrais técnicas do CHTV no Hospital de São Teotónio e DPSM.",
+    "images": [
+      "/projects/genera/chtv-em-viseu__0.jpg",
+      "/projects/genera/chtv-em-viseu__1.jpg",
+      "/projects/genera/chtv-em-viseu__2.jpg",
+      "/projects/genera/chtv-em-viseu__3.jpg",
+      "/projects/genera/chtv-em-viseu__4.jpg",
+      "/projects/genera/chtv-em-viseu__5.jpg",
+      "/projects/genera/chtv-em-viseu__6.jpg"
+    ],
+    "featured": false,
+    "featuredOrder": null,
+    "featuredPhotoCount": 2,
+    "clientName": "",
+    "year": "",
+    "area": "",
+    "budgetEstimate": ""
+  },
+  {
+    "id": "eia-terminal-intermodal-aveiro",
+    "name": "EIA Terminal Intermodal Aveiro",
+    "location": "",
+    "category": "Equipamentos",
+    "description": "Estudo de Impacto Ambiental do Terminal Intermodal na ZALI do Porto de Aveiro",
+    "images": [
+      "/projects/genera/eia-terminal-intermodal-aveiro__0.jpg",
+      "/projects/genera/eia-terminal-intermodal-aveiro__1.jpg",
+      "/projects/genera/eia-terminal-intermodal-aveiro__2.jpg",
+      "/projects/genera/eia-terminal-intermodal-aveiro__3.jpg"
+    ],
+    "featured": false,
+    "featuredOrder": null,
+    "featuredPhotoCount": 2,
+    "clientName": "",
+    "year": "",
+    "area": "",
+    "budgetEstimate": ""
+  },
+  {
+    "id": "edificio-servicos-entrecampos",
+    "name": "Edifício Serviços Entrecampos",
+    "location": "",
+    "category": "Engenharia",
+    "description": "Certificação energética do Edifício de Serviços em Entrecampos, Lisboa",
+    "images": [
+      "/projects/genera/edificio-servicos-entrecampos__0.jpg",
+      "/projects/genera/edificio-servicos-entrecampos__1.jpg",
+      "/projects/genera/edificio-servicos-entrecampos__2.jpg"
+    ],
+    "featured": false,
+    "featuredOrder": null,
+    "featuredPhotoCount": 2,
+    "clientName": "",
+    "year": "",
+    "area": "",
+    "budgetEstimate": ""
+  },
+  {
+    "id": "ipo-coimbra",
+    "name": "IPOCFG em Coimbra",
+    "location": "",
+    "category": "Reabilitações",
+    "description": "Projetos de reabilitação energética das centrais do IPO de Coimbra",
+    "images": [
+      "/projects/genera/ipo-coimbra__0.jpg",
+      "/projects/genera/ipo-coimbra__1.jpg",
+      "/projects/genera/ipo-coimbra__2.jpg"
+    ],
+    "featured": false,
+    "featuredOrder": null,
+    "featuredPhotoCount": 2,
+    "clientName": "",
+    "year": "",
+    "area": "",
+    "budgetEstimate": ""
+  },
+  {
+    "id": "polo_universitario",
+    "name": "Pólo Universitário",
+    "location": "",
+    "category": "Reabilitações",
+    "description": "Pólo universitário do Porto | Projeto de Reabilitação e Construção das Infraestruturas Viarias e Técnicas do Polo Universitario da Asprela – Metro e Universidade do Porto",
+    "images": [
+      "/projects/genera/polo_universitario__0.jpg",
+      "/projects/genera/polo_universitario__1.jpg",
+      "/projects/genera/polo_universitario__2.jpg"
+    ],
+    "featured": false,
+    "featuredOrder": null,
+    "featuredPhotoCount": 2,
+    "clientName": "",
+    "year": "",
+    "area": "",
+    "budgetEstimate": ""
+  },
+  {
+    "id": "certificacao-edificio-ocp-portugal",
+    "name": "Certificação Edifício OCP Portugal",
+    "location": "",
+    "category": "Engenharia",
+    "description": "Certificação Energética SCE das instalações da OCP Portugal – Torres Novas",
+    "images": [
+      "/projects/genera/certificacao-edificio-ocp-portugal__0.jpg",
+      "/projects/genera/certificacao-edificio-ocp-portugal__1.jpg",
+      "/projects/genera/certificacao-edificio-ocp-portugal__2.jpg"
+    ],
+    "featured": false,
+    "featuredOrder": null,
+    "featuredPhotoCount": 2,
+    "clientName": "",
+    "year": "",
+    "area": "",
+    "budgetEstimate": ""
+  },
+  {
+    "id": "certificacao-entreposto-efacec",
+    "name": "Certificação Entreposto Efacec",
+    "location": "",
+    "category": "Engenharia",
+    "description": "Certificação Energética SCE das instalações da Efacec na Maia",
+    "images": [
+      "/projects/genera/certificacao-entreposto-efacec__0.jpg",
+      "/projects/genera/certificacao-entreposto-efacec__1.jpg",
+      "/projects/genera/certificacao-entreposto-efacec__2.jpg",
+      "/projects/genera/certificacao-entreposto-efacec__3.jpg"
+    ],
+    "featured": false,
+    "featuredOrder": null,
+    "featuredPhotoCount": 2,
+    "clientName": "",
+    "year": "",
+    "area": "",
+    "budgetEstimate": ""
+  },
+  {
+    "id": "certificacao-entreposto-jeronimo-martins",
+    "name": "Certificação Entreposto Jerónimo Martins",
+    "location": "",
+    "category": "Engenharia",
+    "description": "Certificação Energética SCE do entreposto Jerónimo Martins – Alcochete",
+    "images": [
+      "/projects/genera/certificacao-entreposto-jeronimo-martins__0.jpg",
+      "/projects/genera/certificacao-entreposto-jeronimo-martins__1.jpg",
+      "/projects/genera/certificacao-entreposto-jeronimo-martins__2.jpg",
+      "/projects/genera/certificacao-entreposto-jeronimo-martins__3.jpg",
+      "/projects/genera/certificacao-entreposto-jeronimo-martins__4.jpg",
+      "/projects/genera/certificacao-entreposto-jeronimo-martins__5.jpg"
+    ],
+    "featured": false,
+    "featuredOrder": null,
+    "featuredPhotoCount": 2,
+    "clientName": "",
+    "year": "",
+    "area": "",
+    "budgetEstimate": ""
+  },
+  {
+    "id": "certificacao-edificio-impic",
+    "name": "Certificação Edifício IMPIC",
+    "location": "",
+    "category": "Engenharia",
+    "description": "Certificação Energética SCE do IMPIC – Instituto dos Mercados Públicos, do Imobiliário e da Construção em Lisboa",
+    "images": [
+      "/projects/genera/certificacao-edificio-impic__0.jpg",
+      "/projects/genera/certificacao-edificio-impic__1.jpg",
+      "/projects/genera/certificacao-edificio-impic__2.jpg",
+      "/projects/genera/certificacao-edificio-impic__3.jpg"
+    ],
+    "featured": false,
+    "featuredOrder": null,
+    "featuredPhotoCount": 2,
+    "clientName": "",
+    "year": "",
+    "area": "",
+    "budgetEstimate": ""
+  },
+  {
+    "id": "cro-aveiro-ovar-agueda",
+    "name": "CRO’s Aveiro Ovar Águeda",
+    "location": "",
+    "category": "Arquitetura",
+    "description": "Centros de Recolha Oficial de animais (CRO) em Aveiro, Ovar e Águeda; para serviço da comunidade intermunicipal da região de Aveiro",
+    "images": [
+      "/projects/genera/cro-aveiro-ovar-agueda__0.jpg",
+      "/projects/genera/cro-aveiro-ovar-agueda__1.jpg",
+      "/projects/genera/cro-aveiro-ovar-agueda__2.jpg",
+      "/projects/genera/cro-aveiro-ovar-agueda__3.jpg",
+      "/projects/genera/cro-aveiro-ovar-agueda__4.jpg"
+    ],
+    "featured": false,
+    "featuredOrder": null,
+    "featuredPhotoCount": 2,
+    "clientName": "",
+    "year": "",
+    "area": "",
+    "budgetEstimate": ""
+  },
+  {
+    "id": "hotel-vieira-resort",
+    "name": "Hotel Vieira Resort",
+    "location": "",
+    "category": "Engenharia",
+    "description": "Certificação Energética do Hotel em Vieira de Leiria com 86 alojamentos e parque aquático na praia de Vieira de Leira",
+    "images": [
+      "/projects/genera/hotel-vieira-resort__0.jpg",
+      "/projects/genera/hotel-vieira-resort__1.jpg",
+      "/projects/genera/hotel-vieira-resort__2.jpg",
+      "/projects/genera/hotel-vieira-resort__3.jpg",
+      "/projects/genera/hotel-vieira-resort__4.jpg"
+    ],
+    "featured": false,
+    "featuredOrder": null,
+    "featuredPhotoCount": 2,
+    "clientName": "",
+    "year": "",
+    "area": "",
+    "budgetEstimate": ""
+  },
+  {
+    "id": "gallery_hostel_porto",
+    "name": "Gallery Hostel Porto",
+    "location": "",
+    "category": "Engenharia",
+    "description": "Certificação Energética SCE do Gallery Hostel no Porto",
+    "images": [
+      "/projects/genera/gallery_hostel_porto__0.jpg",
+      "/projects/genera/gallery_hostel_porto__1.jpg",
+      "/projects/genera/gallery_hostel_porto__2.jpg",
+      "/projects/genera/gallery_hostel_porto__3.jpg",
+      "/projects/genera/gallery_hostel_porto__4.jpg",
+      "/projects/genera/gallery_hostel_porto__5.jpg",
+      "/projects/genera/gallery_hostel_porto__6.jpg"
+    ],
+    "featured": false,
+    "featuredOrder": null,
+    "featuredPhotoCount": 2,
+    "clientName": "",
+    "year": "",
+    "area": "",
+    "budgetEstimate": ""
+  },
+  {
+    "id": "projetos-de-reabilitacao-energetica",
+    "name": "Reabilitação Energética",
+    "location": "",
+    "category": "Reabilitações",
+    "description": "A Genera tem em curso um conjunto significativo de projetos de reabilitação energética em edifícios habitacionais e de serviços . Neste contexto participamos na conferência sobre Reabilitação Urbana e Eficiência Energética realizada na AgEneAL em Almada. Se desejar mais informações sobre este tema tão atual, Consulte-nos",
+    "images": [
+      "/projects/genera/projetos-de-reabilitacao-energetica__0.jpg",
+      "/projects/genera/projetos-de-reabilitacao-energetica__1.jpg",
+      "/projects/genera/projetos-de-reabilitacao-energetica__2.jpg",
+      "/projects/genera/projetos-de-reabilitacao-energetica__3.jpg"
+    ],
+    "featured": false,
+    "featuredOrder": null,
+    "featuredPhotoCount": 2,
+    "clientName": "",
+    "year": "",
+    "area": "",
+    "budgetEstimate": ""
+  },
+  {
+    "id": "hotel_memmo_baleeira_algarve",
+    "name": "Hotel Memmo Baleeira",
+    "location": "",
+    "category": "Engenharia",
+    "description": "Certificação Energética SCE do Hotel Memmo Baleeira em Sagres – Algarve",
+    "images": [
+      "/projects/genera/hotel_memmo_baleeira_algarve__0.jpg",
+      "/projects/genera/hotel_memmo_baleeira_algarve__1.jpg",
+      "/projects/genera/hotel_memmo_baleeira_algarve__2.jpg",
+      "/projects/genera/hotel_memmo_baleeira_algarve__3.jpg",
+      "/projects/genera/hotel_memmo_baleeira_algarve__4.jpg",
+      "/projects/genera/hotel_memmo_baleeira_algarve__5.jpg",
+      "/projects/genera/hotel_memmo_baleeira_algarve__6.jpg"
+    ],
+    "featured": false,
+    "featuredOrder": null,
+    "featuredPhotoCount": 2,
+    "clientName": "",
+    "year": "",
+    "area": "",
+    "budgetEstimate": ""
+  },
+  {
+    "id": "centro-de-saude-baixa-lisboa",
+    "name": "Centro de Saúde, Baixa de Lisboa",
+    "location": "",
+    "category": "Engenharia",
+    "description": "Certificação Energética SCE e da QAI do Centro de Saúde da Baixa de Lisboa",
+    "images": [
+      "/projects/genera/centro-de-saude-baixa-lisboa__0.jpg",
+      "/projects/genera/centro-de-saude-baixa-lisboa__1.jpg",
+      "/projects/genera/centro-de-saude-baixa-lisboa__2.jpg",
+      "/projects/genera/centro-de-saude-baixa-lisboa__3.jpg",
+      "/projects/genera/centro-de-saude-baixa-lisboa__4.jpg",
+      "/projects/genera/centro-de-saude-baixa-lisboa__5.jpg"
+    ],
+    "featured": false,
+    "featuredOrder": null,
+    "featuredPhotoCount": 2,
+    "clientName": "",
+    "year": "",
+    "area": "",
+    "budgetEstimate": ""
+  },
+  {
+    "id": "centro-de-formacao-cefc-da-scml",
+    "name": "Centro de Formação CEFC da SCML",
+    "location": "",
+    "category": "Engenharia",
+    "description": "Certificação Energética SCE e Plano de Eficiencia PRE do Centro de Formação CEFC – SCML Lisboa",
+    "images": [
+      "/projects/genera/centro-de-formacao-cefc-da-scml__0.jpg",
+      "/projects/genera/centro-de-formacao-cefc-da-scml__1.jpg",
+      "/projects/genera/centro-de-formacao-cefc-da-scml__2.jpg"
+    ],
+    "featured": false,
+    "featuredOrder": null,
+    "featuredPhotoCount": 2,
+    "clientName": "",
+    "year": "",
+    "area": "",
+    "budgetEstimate": ""
+  },
+  {
+    "id": "centro-de-de-apoio-social-casa-da-scml",
+    "name": "Centro Social ‘CASA’ da SCML",
+    "location": "",
+    "category": "Engenharia",
+    "description": "Certificação Energética SCE e Plano de Eficiencia PRE do centro de apoio social ‘CASA’ – SCML Lisboa",
+    "images": [
+      "/projects/genera/centro-de-de-apoio-social-casa-da-scml__0.jpg",
+      "/projects/genera/centro-de-de-apoio-social-casa-da-scml__1.jpg",
+      "/projects/genera/centro-de-de-apoio-social-casa-da-scml__2.jpg",
+      "/projects/genera/centro-de-de-apoio-social-casa-da-scml__3.jpg",
+      "/projects/genera/centro-de-de-apoio-social-casa-da-scml__4.jpg"
+    ],
+    "featured": false,
+    "featuredOrder": null,
+    "featuredPhotoCount": 2,
+    "clientName": "",
+    "year": "",
+    "area": "",
+    "budgetEstimate": ""
+  },
+  {
+    "id": "certificacao-edificio-inag",
+    "name": "Certificação Edificio INAG",
+    "location": "",
+    "category": "Engenharia",
+    "description": "",
+    "images": [
+      "/projects/genera/certificacao-edificio-inag__0.jpg",
+      "/projects/genera/certificacao-edificio-inag__1.jpg",
+      "/projects/genera/certificacao-edificio-inag__2.jpg"
+    ],
+    "featured": false,
+    "featuredOrder": null,
+    "featuredPhotoCount": 2,
+    "clientName": "",
+    "year": "",
+    "area": "",
+    "budgetEstimate": ""
+  },
+  {
+    "id": "certificacao-alfandega-setubal",
+    "name": "Certificação Alfandega Setubal",
+    "location": "",
+    "category": "Engenharia",
+    "description": "Certificação Energética SCE Alfandega Setubal",
+    "images": [
+      "/projects/genera/certificacao-alfandega-setubal__0.jpg",
+      "/projects/genera/certificacao-alfandega-setubal__1.jpg",
+      "/projects/genera/certificacao-alfandega-setubal__2.jpg",
+      "/projects/genera/certificacao-alfandega-setubal__3.jpg",
+      "/projects/genera/certificacao-alfandega-setubal__4.jpg"
+    ],
+    "featured": false,
+    "featuredOrder": null,
+    "featuredPhotoCount": 2,
+    "clientName": "",
+    "year": "",
+    "area": "",
+    "budgetEstimate": ""
+  },
+  {
+    "id": "auditoria-range-rover",
+    "name": "Auditoria  Range Rover",
+    "location": "",
+    "category": "Engenharia",
+    "description": "Auditoria DL-68A e SCE da Range Rover – Carclasse em Viana",
+    "images": [
+      "/projects/genera/auditoria-range-rover__0.jpg",
+      "/projects/genera/auditoria-range-rover__1.jpg",
+      "/projects/genera/auditoria-range-rover__2.jpg",
+      "/projects/genera/auditoria-range-rover__3.jpg",
+      "/projects/genera/auditoria-range-rover__4.jpg"
+    ],
+    "featured": false,
+    "featuredOrder": null,
+    "featuredPhotoCount": 2,
+    "clientName": "",
+    "year": "",
+    "area": "",
+    "budgetEstimate": ""
+  },
+  {
+    "id": "certificacao-edificio-dgadr",
+    "name": "Certificação Edificio DGADR",
+    "location": "",
+    "category": "Engenharia",
+    "description": "Certificação Energética SCE do Edifício Afonso Costa – DGADR Lisboa",
+    "images": [
+      "/projects/genera/certificacao-edificio-dgadr__0.jpg",
+      "/projects/genera/certificacao-edificio-dgadr__1.jpg",
+      "/projects/genera/certificacao-edificio-dgadr__2.jpg",
+      "/projects/genera/certificacao-edificio-dgadr__3.jpg"
+    ],
+    "featured": false,
+    "featuredOrder": null,
+    "featuredPhotoCount": 2,
+    "clientName": "",
+    "year": "",
+    "area": "",
+    "budgetEstimate": ""
+  },
+  {
+    "id": "certificacao-edificio-gpp",
+    "name": "Certificação Edificio GPP",
+    "location": "",
+    "category": "Engenharia",
+    "description": "Certificação Energética SCE do Edifício no Parque Eduardo VII – GPP em Lisboa",
+    "images": [
+      "/projects/genera/certificacao-edificio-gpp__0.jpg",
+      "/projects/genera/certificacao-edificio-gpp__1.jpg",
+      "/projects/genera/certificacao-edificio-gpp__2.jpg",
+      "/projects/genera/certificacao-edificio-gpp__3.jpg",
+      "/projects/genera/certificacao-edificio-gpp__4.jpg"
+    ],
+    "featured": false,
+    "featuredOrder": null,
+    "featuredPhotoCount": 2,
+    "clientName": "",
+    "year": "",
+    "area": "",
+    "budgetEstimate": ""
+  },
+  {
+    "id": "auditoria-mercedes-e-jaguar",
+    "name": "Auditoria Mercedes e Jaguar",
+    "location": "",
+    "category": "Engenharia",
+    "description": "Auditoria DL-68A e SCE da Mercedes – CarClasse em Lisboa",
+    "images": [
+      "/projects/genera/auditoria-mercedes-e-jaguar__0.jpg",
+      "/projects/genera/auditoria-mercedes-e-jaguar__1.jpg",
+      "/projects/genera/auditoria-mercedes-e-jaguar__2.jpg",
+      "/projects/genera/auditoria-mercedes-e-jaguar__3.jpg",
+      "/projects/genera/auditoria-mercedes-e-jaguar__4.jpg",
+      "/projects/genera/auditoria-mercedes-e-jaguar__5.jpg",
+      "/projects/genera/auditoria-mercedes-e-jaguar__6.jpg",
+      "/projects/genera/auditoria-mercedes-e-jaguar__7.jpg",
+      "/projects/genera/auditoria-mercedes-e-jaguar__8.jpg"
+    ],
+    "featured": false,
+    "featuredOrder": null,
+    "featuredPhotoCount": 2,
+    "clientName": "",
+    "year": "",
+    "area": "",
+    "budgetEstimate": ""
+  },
+  {
+    "id": "auditorias-energeticas-dl68-a",
+    "name": "Auditorias Energéticas DL68-A",
+    "location": "",
+    "category": "Engenharia",
+    "description": "Auditorias energeticas e gestão de consumos – Download PDF Com a publicação e entrada em vigor do DL 68-A todas as entidades com mais de 250 efetivos, devem inventariar e efetuar os registos dos seus consumos de energia no portal da DGEG . Para que os registos de consumos sejam completos, poderá ser necessário desenvolver algumas auditorias energéticas , e instalar analisadores de energia , para identificar os potenciais de melhoria da eficiência e redução nos consumos . A Genera está habilitada a desenvolver estes trabalhos dispondo internamente dos Peritos do SCE (Serviços) e Peritos do SGCIE (industrias) essenciais ao inventario e registo de consumos na DGEG. A Genera dispõe de analisadores de energia associados à plataforma genEnergy , personalizável ás especificidades de cada entidade. Após a implementação destas medidas, a entidade poupará até 20% nas faturas da energia, obtendo o retorno do investimento em cerca de 6 meses .",
+    "images": [
+      "/projects/genera/auditorias-energeticas-dl68-a__0.jpg",
+      "/projects/genera/auditorias-energeticas-dl68-a__1.jpg",
+      "/projects/genera/auditorias-energeticas-dl68-a__2.jpg",
+      "/projects/genera/auditorias-energeticas-dl68-a__3.jpg",
+      "/projects/genera/auditorias-energeticas-dl68-a__4.jpg"
+    ],
+    "featured": false,
+    "featuredOrder": null,
+    "featuredPhotoCount": 2,
+    "clientName": "",
+    "year": "",
+    "area": "",
+    "budgetEstimate": ""
+  },
+  {
+    "id": "gestao-da-energia-na-helm-portugal",
+    "name": "Gestão da Energia na HELM",
+    "location": "",
+    "category": "Engenharia",
+    "description": "Gestão da Energia no edifício da HELM – Lisboa A sociedade Genera concebe e promove a instalação de sistemas de gestão da energia que visam a monitorização ,controlo , contabilização e o reporte de consumos. GenEnergy é o nosso sistema de gestão da energia e utilizando algoritmos de software recursivos, estes sendo acedidos através de uma plataforma web ( http://genenergy.eu ).",
+    "images": [
+      "/projects/genera/gestao-da-energia-na-helm-portugal__0.jpg",
+      "/projects/genera/gestao-da-energia-na-helm-portugal__1.jpg",
+      "/projects/genera/gestao-da-energia-na-helm-portugal__2.jpg",
+      "/projects/genera/gestao-da-energia-na-helm-portugal__3.jpg"
+    ],
+    "featured": false,
+    "featuredOrder": null,
+    "featuredPhotoCount": 2,
+    "clientName": "",
+    "year": "",
+    "area": "",
+    "budgetEstimate": ""
+  },
+  {
+    "id": "gestao-da-energia-na-cmtv",
+    "name": "Gestão da Energia na cmTV",
+    "location": "",
+    "category": "Engenharia",
+    "description": "Gestão da Energia no edifício da cmTV – Lisboa. A sociedade Genera concebe e promove a instalação de sistemas de gestão da energia que visam a monitorização ,controlo , contabilização e o reporte de consumos.",
+    "images": [
+      "/projects/genera/gestao-da-energia-na-cmtv__0.jpg",
+      "/projects/genera/gestao-da-energia-na-cmtv__1.jpg",
+      "/projects/genera/gestao-da-energia-na-cmtv__2.jpg",
+      "/projects/genera/gestao-da-energia-na-cmtv__3.jpg"
+    ],
+    "featured": false,
+    "featuredOrder": null,
+    "featuredPhotoCount": 2,
+    "clientName": "",
+    "year": "",
+    "area": "",
+    "budgetEstimate": ""
+  },
+  {
+    "id": "gestao-da-energia-em-ribamar",
+    "name": "Gestão da Energia em Ribamar",
+    "location": "",
+    "category": "Engenharia",
+    "description": "Gestão da Energia em edifício de Serviços em Ribamar. A sociedade Genera concebe e promove a instalação de sistemas de gestão da energia que visam a monitorização ,controlo , contabilização e o reporte de consumos. GenEnergy é o nosso sistema de gestão da energia e utilizando algoritmos de software recursivos, estes sendo acedidos através de uma plataforma web ( http://genenergy.eu ).",
+    "images": [
+      "/projects/genera/gestao-da-energia-em-ribamar__0.jpg",
+      "/projects/genera/gestao-da-energia-em-ribamar__1.jpg",
+      "/projects/genera/gestao-da-energia-em-ribamar__2.jpg",
+      "/projects/genera/gestao-da-energia-em-ribamar__3.jpg"
+    ],
+    "featured": false,
+    "featuredOrder": null,
+    "featuredPhotoCount": 2,
+    "clientName": "",
+    "year": "",
+    "area": "",
+    "budgetEstimate": ""
+  },
+  {
+    "id": "centro-social-de-guimaraes",
+    "name": "Centro Social em Guimarães",
+    "location": "",
+    "category": "Engenharia",
+    "description": "Kubo Lda| Projeto e certificação dos sistemas avac e solar térmico de edifício social com 60 alojamentos, infantário e centro de dia. Identificação de medidas correctivas e melhoria da eficiência. Emissão das declarações de conformidade regulamentar e certificados energéticos dos edifícios.",
+    "images": [
+      "/projects/genera/centro-social-de-guimaraes__0.jpg",
+      "/projects/genera/centro-social-de-guimaraes__1.jpg"
+    ],
+    "featured": false,
+    "featuredOrder": null,
+    "featuredPhotoCount": 2,
+    "clientName": "",
+    "year": "",
+    "area": "",
+    "budgetEstimate": ""
+  },
+  {
+    "id": "hotel-sao-mamede",
+    "name": "Hotel Sao Mamede",
+    "location": "",
+    "category": "Engenharia",
+    "description": "Portalegre – Mbcp SA| Certificação Energética do Hotel com 81 quartos. Identificação de medidas correctivas e melhoria da eficiência energética. Emissão dos Certificados Energéticos.",
+    "images": [
+      "/projects/genera/hotel-sao-mamede__0.jpg",
+      "/projects/genera/hotel-sao-mamede__1.jpg"
+    ],
+    "featured": false,
+    "featuredOrder": null,
+    "featuredPhotoCount": 2,
+    "clientName": "",
+    "year": "",
+    "area": "",
+    "budgetEstimate": ""
+  },
+  {
+    "id": "hotel-premium",
+    "name": "Hotel Premium",
+    "location": "",
+    "category": "Engenharia",
+    "description": "Porto – Serino Hotéis Lda| Análise e certificação do projeto avac do edifício de turísmo. Identificação de medidas corretivas e melhorias na eficiência do Hotel. Emissão do certificado de desempenho energético.",
+    "images": [
+      "/projects/genera/hotel-premium__0.jpg",
+      "/projects/genera/hotel-premium__1.jpg",
+      "/projects/genera/hotel-premium__2.jpg",
+      "/projects/genera/hotel-premium__3.jpg"
+    ],
+    "featured": false,
+    "featuredOrder": null,
+    "featuredPhotoCount": 2,
+    "clientName": "",
+    "year": "",
+    "area": "",
+    "budgetEstimate": ""
+  },
+  {
+    "id": "pavilhoes-de-desportos",
+    "name": "Pavilhões de Desportos",
+    "location": "",
+    "category": "Engenharia",
+    "description": "CM Porto – GOP EM| Certificação Energética dos pavilhões desportivos das escolas do Viso e Irene Lisboa da Câmara Municipal do Porto. Identificação de melhorias de eficiência e poupança de energia. Emissão dos certificados de desempenho energético e da qualidade do ar.",
+    "images": [
+      "/projects/genera/pavilhoes-de-desportos__0.jpg"
+    ],
+    "featured": false,
+    "featuredOrder": null,
+    "featuredPhotoCount": 1,
+    "clientName": "",
+    "year": "",
+    "area": "",
+    "budgetEstimate": ""
+  },
+  {
+    "id": "edificios-infante-a-lapa",
+    "name": "Edifícios Infante A Lapa",
+    "location": "",
+    "category": "Engenharia",
+    "description": "Lisboa – Portbuilding SA| Certificação Energética de 84 frações de habitações e serviços. Identificação de melhorias de eficiência e poupança de energia. Emissão dos certificados de desempenho energético por fração.",
+    "images": [
+      "/projects/genera/edificios-infante-a-lapa__0.jpg",
+      "/projects/genera/edificios-infante-a-lapa__1.jpg"
+    ],
+    "featured": false,
+    "featuredOrder": null,
+    "featuredPhotoCount": 2,
+    "clientName": "",
+    "year": "",
+    "area": "",
+    "budgetEstimate": ""
+  },
+  {
+    "id": "eleclerc-sgps",
+    "name": "ELeclerc SGPS",
+    "location": "",
+    "category": "Engenharia",
+    "description": "Centros Comerciais ELeclerc Portugal | Certificação energética e da qualidade do ar dos edifícios comerciais Eleclerc na Bobadela, Montijo, Santarém e Portalegre. Inspeção técnica dos sistemas avac. Gestão dos consumos de energia.",
+    "images": [
+      "/projects/genera/eleclerc-sgps__0.jpg",
+      "/projects/genera/eleclerc-sgps__1.jpg"
+    ],
+    "featured": false,
+    "featuredOrder": null,
+    "featuredPhotoCount": 2,
+    "clientName": "",
+    "year": "",
+    "area": "",
+    "budgetEstimate": ""
+  },
+  {
+    "id": "supermercados-dia",
+    "name": "Supermercados DIA",
+    "location": "",
+    "category": "Engenharia",
+    "description": "Grupo DIA| Certificação energética e da qualidade do ar interior dos edifícios comerciais Minipreço em Arcos de Valdevez, Póvoa de Varzim, Penafiel, Matosinhos, Porto, Vila Nova de Gaia, Condeixa e Aveiro. Inspeção técnica dos sistemas Avac.",
+    "images": [
+      "/projects/genera/supermercados-dia__0.jpg",
+      "/projects/genera/supermercados-dia__1.jpg",
+      "/projects/genera/supermercados-dia__2.jpg"
+    ],
+    "featured": false,
+    "featuredOrder": null,
+    "featuredPhotoCount": 2,
+    "clientName": "",
+    "year": "",
+    "area": "",
+    "budgetEstimate": ""
+  },
+  {
+    "id": "servicos-centrais-publicos",
+    "name": "Serviços Centrais Publicos",
+    "location": "",
+    "category": "Engenharia",
+    "description": "Alfragide – Espap| Certificação Energética e da qualidade do ar interior dos Edifícios e data center dos Serviços Centrais da Administração Publica. Inspecção técnica ás Ups’s e sistemas Avac.",
+    "images": [
+      "/projects/genera/servicos-centrais-publicos__0.jpg"
+    ],
+    "featured": false,
+    "featuredOrder": null,
+    "featuredPhotoCount": 1,
+    "clientName": "",
+    "year": "",
+    "area": "",
+    "budgetEstimate": ""
+  },
+  {
+    "id": "parque-tecnologico",
+    "name": "Parque Tecnológico",
+    "location": "",
+    "category": "Engenharia",
+    "description": "Porto Salvo, Oeiras – TagusPark SA| Certificação Energética e da qualidade do ar interior dos edifícios Tecnologia, Qualidade, Ciência e Inovação. Inspeção técnica dos sistemas Avac. Sistemas de gestão dos consumos de energia.",
+    "images": [
+      "/projects/genera/parque-tecnologico__0.jpg",
+      "/projects/genera/parque-tecnologico__1.jpg"
+    ],
+    "featured": false,
+    "featuredOrder": null,
+    "featuredPhotoCount": 2,
+    "clientName": "",
+    "year": "",
+    "area": "",
+    "budgetEstimate": ""
+  },
+  {
+    "id": "cidade-desportiva-sarriguren",
+    "name": "Cidade Desportiva “Sarriguren”",
+    "location": "",
+    "category": "Arquitetura",
+    "description": "Navarra, Valle de Egués| A cidade Desportiva “Sarriguren” em Navarra é um Projeto operativo e executivo dos edifícios e overlays desportivas; área total de 80.340 m2 com arenas indoor e outdoor, piscinas indoor e parques. [arq. C. Pinós]",
+    "images": [
+      "/projects/genera/cidade-desportiva-sarriguren__0.jpg",
+      "/projects/genera/cidade-desportiva-sarriguren__1.jpg",
+      "/projects/genera/cidade-desportiva-sarriguren__2.jpg"
+    ],
+    "featured": false,
+    "featuredOrder": null,
+    "featuredPhotoCount": 2,
+    "clientName": "",
+    "year": "",
+    "area": "",
+    "budgetEstimate": ""
+  },
+  {
+    "id": "centro-garland",
+    "name": "Centro Logistico Garland",
+    "location": "",
+    "category": "Arquitetura",
+    "description": "Maia, Garcia SA | O Centro Garland na Maia é um edifício de transportes e logística com área total de 10.771m2; premiado na categoria de “melhor empreendimento de logística”. [arq. S. Garcia]",
+    "images": [
+      "/projects/genera/centro-garland__0.jpg",
+      "/projects/genera/centro-garland__1.jpg",
+      "/projects/genera/centro-garland__2.jpg"
+    ],
+    "featured": false,
+    "featuredOrder": null,
+    "featuredPhotoCount": 2,
+    "clientName": "",
+    "year": "",
+    "area": "",
+    "budgetEstimate": ""
+  },
+  {
+    "id": "torre-cube",
+    "name": "Torre Cube",
+    "location": "",
+    "category": "Arquitetura",
+    "description": "Guadalajara, Cube Internacional Ltd| Torre Cube em Guadalajara é um edifíco de escritórios com 20 pisos e área total de 17.100 m2; galardoado com o primeiro premio da IX Bienal Espanhola de Arquitetura e Urbanismo. [arq.C.Pinós]",
+    "images": [
+      "/projects/genera/torre-cube__0.jpg",
+      "/projects/genera/torre-cube__1.jpg"
+    ],
+    "featured": false,
+    "featuredOrder": null,
+    "featuredPhotoCount": 2,
+    "clientName": "",
+    "year": "",
+    "area": "",
+    "budgetEstimate": ""
+  },
+  {
+    "id": "eficiencia-energetica",
+    "name": "Eficiência Energética",
+    "location": "",
+    "category": "Arquitetura",
+    "description": "PNAEE incentiva a eficiência energética em Hotéis e Lares com FEE’s",
+    "images": [
+      "/projects/genera/eficiencia-energetica__0.jpg"
+    ],
+    "featured": false,
+    "featuredOrder": null,
+    "featuredPhotoCount": 1,
+    "clientName": "",
+    "year": "",
+    "area": "",
+    "budgetEstimate": ""
+  },
+  {
+    "id": "terminal-de-porto-maritimo",
+    "name": "Terminal de Porto Marítimo",
+    "location": "",
+    "category": "Equipamentos",
+    "description": "Luanda, Sonils Ltd| Projeto Terminal de Porto Marítimo Luanda, Sonils Ltd funcional e executivo do centro de apoio ao porto marítimo com 11.700 m2; inclui zonas administrativas, salas de conferência e refeitórios. [arq. M. Vieira]",
+    "images": [
+      "/projects/genera/terminal-de-porto-maritimo__0.jpg"
+    ],
+    "featured": false,
+    "featuredOrder": null,
+    "featuredPhotoCount": 1,
+    "clientName": "",
+    "year": "",
+    "area": "",
+    "budgetEstimate": ""
+  }
+]
