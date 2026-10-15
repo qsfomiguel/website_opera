@@ -2,8 +2,10 @@ import Link from "next/link";
 
 import { createTeamMember } from "@/app/admin/actions";
 import { TeamMemberForm } from "@/components/admin/team-member-form";
+import { requireAdmin } from "@/lib/auth";
 
-export default function NewTeamMemberPage() {
+export default async function NewTeamMemberPage() {
+  await requireAdmin();
   return (
     <main className="mx-auto max-w-3xl px-6 py-16">
       <Link

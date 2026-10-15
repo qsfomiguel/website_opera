@@ -5,11 +5,13 @@ import { logout } from "@/app/admin/login/actions";
 import { moveFeatured, toggleFeatured } from "@/app/admin/actions";
 import { AllProjectsList } from "@/components/admin/all-projects-list";
 import { PhotoCountSelect } from "@/components/admin/photo-count-select";
+import { requireAdmin } from "@/lib/auth";
 import { getProjects } from "@/lib/content-store";
 
 export const dynamic = "force-dynamic";
 
 export default async function AdminPage() {
+  await requireAdmin();
   const projects = await getProjects();
   const featured = projects
     .filter((p) => p.featured)

@@ -5,11 +5,13 @@ import { AboutPhotoUpload } from "@/components/admin/about-photo-upload";
 import { AwardImagesUpload } from "@/components/admin/award-images-upload";
 import { LogoUpload } from "@/components/admin/logo-upload";
 import { SiteContentForm } from "@/components/admin/site-content-form";
+import { requireAdmin } from "@/lib/auth";
 import { getSiteContent } from "@/lib/site-content";
 
 export const dynamic = "force-dynamic";
 
 export default async function SiteContentPage() {
+  await requireAdmin();
   const content = await getSiteContent();
 
   return (

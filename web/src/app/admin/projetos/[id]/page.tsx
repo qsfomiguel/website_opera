@@ -3,6 +3,7 @@ import { notFound } from "next/navigation";
 
 import { updateProject } from "@/app/admin/actions";
 import { ProjectForm } from "@/components/admin/project-form";
+import { requireAdmin } from "@/lib/auth";
 import { getProject } from "@/lib/content-store";
 
 export const dynamic = "force-dynamic";
@@ -12,6 +13,7 @@ export default async function EditProjectPage({
 }: {
   params: Promise<{ id: string }>;
 }) {
+  await requireAdmin();
   const { id } = await params;
   const project = await getProject(id);
   if (!project) notFound();

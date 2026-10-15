@@ -1,10 +1,5 @@
 "use server";
 
-import { execFile } from "node:child_process";
-import fs from "node:fs/promises";
-import os from "node:os";
-import path from "node:path";
-import { promisify } from "node:util";
 import { put } from "@vercel/blob";
 import { revalidatePath } from "next/cache";
 import { redirect } from "next/navigation";
@@ -17,6 +12,7 @@ import {
   nextProjectSortOrder,
   moveProject,
 } from "@/lib/content-store";
+import { requireAdmin } from "@/lib/auth";
 import { getSiteContent, saveSiteContent } from "@/lib/site-content";
 import {
   getTeam,
@@ -29,8 +25,7 @@ import {
 
 export type FormState = { error?: string };
 
-const execFileAsync = promisify(execFile);
-const SCRIPTS_DIR = path.join(process.cwd(), "scripts");
+const MAX_LOGO_BYTES = 10 * 1024 * 1024;
 
 async function saveUploadedImage(file: File): Promise<string> {
   const ext = (file.name.split(".").pop() || "jpg").toLowerCase().replace(/[^a-z0-9]/g, "") || "jpg";
@@ -40,31 +35,15 @@ async function saveUploadedImage(file: File): Promise<string> {
   return blob.url;
 }
 
-async function processLogoImage(file: File): Promise<{ dark: string; light: string }> {
-  const tmpDir = await fs.mkdtemp(path.join(os.tmpdir(), "logo-"));
-  const buffer = Buffer.from(await file.arrayBuffer());
-  const srcPath = path.join(tmpDir, "src");
-
+/** Stores the two logo variants already processed in the browser
+ * (src/lib/process-logo.ts). */
+async function saveLogoVariants(dark: File, light: File): Promise<{ dark: string; light: string }> {
   const id = crypto.randomUUID();
-  const darkPath = path.join(tmpDir, `${id}-dark.png`);
-  const lightPath = path.join(tmpDir, `${id}-light.png`);
-
-  try {
-    await fs.writeFile(srcPath, buffer);
-    await execFileAsync("python3", [
-      path.join(SCRIPTS_DIR, "process-logo.py"),
-      srcPath,
-      darkPath,
-      lightPath,
-    ]);
-    const [darkBlob, lightBlob] = await Promise.all([
-      put(`uploads/${id}-dark.png`, await fs.readFile(darkPath), { access: "public" }),
-      put(`uploads/${id}-light.png`, await fs.readFile(lightPath), { access: "public" }),
-    ]);
-    return { dark: darkBlob.url, light: lightBlob.url };
-  } finally {
-    await fs.rm(tmpDir, { recursive: true, force: true }).catch(() => {});
-  }
+  const [darkBlob, lightBlob] = await Promise.all([
+    put(`uploads/${id}-dark.png`, Buffer.from(await dark.arrayBuffer()), { access: "public" }),
+    put(`uploads/${id}-light.png`, Buffer.from(await light.arrayBuffer()), { access: "public" }),
+  ]);
+  return { dark: darkBlob.url, light: lightBlob.url };
 }
 
 async function saveUploadedImages(files: File[]): Promise<string[]> {
@@ -87,6 +66,7 @@ function revalidatePublicPages() {
 }
 
 export async function toggleFeatured(id: string, featured: boolean) {
+  await requireAdmin();
   const projects = await getProjects();
   const target = projects.find((p) => p.id === id);
   if (!target) return;
@@ -118,6 +98,7 @@ export async function toggleFeatured(id: string, featured: boolean) {
 }
 
 export async function moveFeatured(id: string, direction: "up" | "down") {
+  await requireAdmin();
   const projects = await getProjects();
   const featured = projects
     .filter((p) => p.featured)
@@ -138,12 +119,14 @@ export async function moveFeatured(id: string, direction: "up" | "down") {
 }
 
 export async function moveProjectOrder(id: string, direction: "up" | "down") {
+  await requireAdmin();
   await moveProject(id, direction);
   revalidatePublicPages();
   revalidatePath("/admin");
 }
 
 export async function setFeaturedPhotoCount(id: string, count: number) {
+  await requireAdmin();
   const projects = await getProjects();
   const target = projects.find((p) => p.id === id);
   if (!target) return;
@@ -158,6 +141,7 @@ export async function updateProject(
   _prevState: FormState,
   formData: FormData,
 ): Promise<FormState> {
+  await requireAdmin();
   const projects = await getProjects();
   const target = projects.find((p) => p.id === id);
   if (!target) {
@@ -201,6 +185,7 @@ export async function updateProject(
 }
 
 export async function createProject(_prevState: FormState, formData: FormData): Promise<FormState> {
+  await requireAdmin();
   const name = String(formData.get("name") ?? "").trim();
   const nameEn = String(formData.get("nameEn") ?? "").trim();
   const location = String(formData.get("location") ?? "").trim();
@@ -251,6 +236,7 @@ export async function updateSiteContent(
   _prevState: FormState,
   formData: FormData,
 ): Promise<FormState> {
+  await requireAdmin();
   const heroAbout = String(formData.get("heroAbout") ?? "").trim();
   const heroAboutEn = String(formData.get("heroAboutEn") ?? "").trim();
   const scrollHint = String(formData.get("scrollHint") ?? "").trim();
@@ -346,16 +332,20 @@ export async function uploadLogo(
   _prevState: FormState,
   formData: FormData,
 ): Promise<FormState> {
-  const file = formData.get("logo");
-  if (!(file instanceof File) || file.size === 0) {
+  await requireAdmin();
+  const dark = formData.get("logoDark");
+  const light = formData.get("logoLight");
+  const isPng = (f: FormDataEntryValue | null): f is File =>
+    f instanceof File && f.size > 0 && f.size <= MAX_LOGO_BYTES && f.type === "image/png";
+  if (!isPng(dark) || !isPng(light)) {
     return { error: "Escolha um ficheiro de imagem." };
   }
 
   let urls: { dark: string; light: string };
   try {
-    urls = await processLogoImage(file);
+    urls = await saveLogoVariants(dark, light);
   } catch {
-    return { error: "Não foi possível processar o logotipo. Tente outra imagem." };
+    return { error: "Não foi possível guardar o logotipo. Tente novamente." };
   }
 
   const current = await getSiteContent();
@@ -366,6 +356,7 @@ export async function uploadLogo(
 }
 
 export async function removeLogo(): Promise<void> {
+  await requireAdmin();
   const current = await getSiteContent();
   await saveSiteContent({ ...current, logoUrl: "", logoUrlLight: "" });
   revalidatePublicPages();
@@ -376,6 +367,7 @@ export async function uploadAboutPhoto(
   _prevState: FormState,
   formData: FormData,
 ): Promise<FormState> {
+  await requireAdmin();
   const file = formData.get("photo");
   if (!(file instanceof File) || file.size === 0) {
     return { error: "Escolha um ficheiro de imagem." };
@@ -390,6 +382,7 @@ export async function uploadAboutPhoto(
 }
 
 export async function removeAboutPhoto(): Promise<void> {
+  await requireAdmin();
   const current = await getSiteContent();
   await saveSiteContent({ ...current, aboutPhotoUrl: "" });
   revalidatePublicPages();
@@ -400,6 +393,7 @@ export async function addAwardImages(
   _prevState: FormState,
   formData: FormData,
 ): Promise<FormState> {
+  await requireAdmin();
   const files = formData.getAll("images").filter((f): f is File => f instanceof File && f.size > 0);
   if (files.length === 0) {
     return { error: "Escolha pelo menos um ficheiro de imagem." };
@@ -414,6 +408,7 @@ export async function addAwardImages(
 }
 
 export async function removeAwardImage(url: string): Promise<void> {
+  await requireAdmin();
   const current = await getSiteContent();
   await saveSiteContent({
     ...current,
@@ -424,6 +419,7 @@ export async function removeAwardImage(url: string): Promise<void> {
 }
 
 export async function translateText(text: string): Promise<{ translated?: string; error?: string }> {
+  await requireAdmin();
   const trimmed = text.trim();
   if (!trimmed) return { translated: "" };
 
@@ -440,6 +436,7 @@ export async function translateText(text: string): Promise<{ translated?: string
 }
 
 export async function deleteProject(id: string) {
+  await requireAdmin();
   await deleteProjectRow(id);
   revalidatePublicPages();
   redirect("/admin");
@@ -449,6 +446,7 @@ export async function createTeamMember(
   _prevState: FormState,
   formData: FormData,
 ): Promise<FormState> {
+  await requireAdmin();
   const name = String(formData.get("name") ?? "").trim();
   const role = String(formData.get("role") ?? "").trim();
   const roleEn = String(formData.get("roleEn") ?? "").trim();
@@ -477,6 +475,7 @@ export async function updateTeamMember(
   _prevState: FormState,
   formData: FormData,
 ): Promise<FormState> {
+  await requireAdmin();
   const team = await getTeam();
   const target = team.find((m) => m.id === id);
   if (!target) {
@@ -505,12 +504,14 @@ export async function updateTeamMember(
 }
 
 export async function deleteTeamMember(id: string) {
+  await requireAdmin();
   await deleteTeamMemberRow(id);
   revalidatePublicPages();
   redirect("/admin/equipa");
 }
 
 export async function moveTeamMemberOrder(id: string, direction: "up" | "down") {
+  await requireAdmin();
   await moveTeamMember(id, direction);
   revalidatePublicPages();
   revalidatePath("/admin/equipa");

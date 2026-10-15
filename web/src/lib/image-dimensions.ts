@@ -1,5 +1,6 @@
 import fs from "node:fs/promises";
 import path from "node:path";
+import { getCloudflareContext } from "@opennextjs/cloudflare";
 
 const SVG_HEAD_BYTES = 1024;
 
@@ -45,16 +46,30 @@ export async function getImageDimensions(
       return read(Buffer.from(await res.arrayBuffer()));
     }
 
-    const filePath = path.join(process.cwd(), "public", imagePath);
-    const fd = await fs.open(filePath, "r");
+    return read(await readLocalHead(imagePath, bytes));
+  } catch {
+    return null;
+  }
+}
+
+/** public/ is on disk under `next dev`/`next start`, but on Cloudflare Workers
+ * it only exists as static assets, served through the ASSETS binding. */
+async function readLocalHead(imagePath: string, bytes: number): Promise<Buffer> {
+  try {
+    const fd = await fs.open(path.join(process.cwd(), "public", imagePath), "r");
     try {
       const buffer = Buffer.alloc(bytes);
       const { bytesRead } = await fd.read(buffer, 0, bytes, 0);
-      return read(buffer.subarray(0, bytesRead));
+      return buffer.subarray(0, bytesRead);
     } finally {
       await fd.close();
     }
   } catch {
-    return null;
+    const { env } = await getCloudflareContext({ async: true });
+    const assets = (env as { ASSETS?: { fetch(url: URL): Promise<Response> } }).ASSETS;
+    if (!assets) throw new Error("public file not found");
+    const res = await assets.fetch(new URL(imagePath, "https://assets.local"));
+    if (!res.ok) throw new Error(`asset status ${res.status}`);
+    return Buffer.from(await res.arrayBuffer()).subarray(0, bytes);
   }
 }

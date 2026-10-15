@@ -3,6 +3,7 @@ import { notFound } from "next/navigation";
 
 import { updateTeamMember } from "@/app/admin/actions";
 import { TeamMemberForm } from "@/components/admin/team-member-form";
+import { requireAdmin } from "@/lib/auth";
 import { getTeamMember } from "@/lib/team-store";
 
 export const dynamic = "force-dynamic";
@@ -12,6 +13,7 @@ export default async function EditTeamMemberPage({
 }: {
   params: Promise<{ id: string }>;
 }) {
+  await requireAdmin();
   const { id } = await params;
   const member = await getTeamMember(id);
   if (!member) notFound();

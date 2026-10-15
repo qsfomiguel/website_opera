@@ -3,11 +3,13 @@ import Link from "next/link";
 
 import { moveTeamMemberOrder } from "@/app/admin/actions";
 import { DeleteTeamMemberButton } from "@/components/admin/delete-team-member-button";
+import { requireAdmin } from "@/lib/auth";
 import { getTeam } from "@/lib/team-store";
 
 export const dynamic = "force-dynamic";
 
 export default async function AdminTeamPage() {
+  await requireAdmin();
   const team = await getTeam();
 
   return (

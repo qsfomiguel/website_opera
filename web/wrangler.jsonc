@@ -1,0 +1,22 @@
+{
+  "$schema": "node_modules/wrangler/config-schema.json",
+  "name": "opera-website",
+  "main": ".open-next/worker.js",
+  "compatibility_date": "2026-10-01",
+  "compatibility_flags": ["nodejs_compat", "global_fetch_strictly_public"],
+  "assets": {
+    "directory": ".open-next/assets",
+    "binding": "ASSETS"
+  },
+  "services": [
+    {
+      "binding": "WORKER_SELF_REFERENCE",
+      "service": "opera-website"
+    }
+  ],
+  "observability": {
+    "enabled": true
+  }
+  // Secrets (DATABASE_URL, SESSION_SECRET, BLOB_READ_WRITE_TOKEN) are set in the
+  // Cloudflare dashboard or with `npx wrangler secret put <NAME>`, never here.
+}

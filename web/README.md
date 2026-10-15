@@ -35,6 +35,30 @@ The easiest way to deploy your Next.js app is to use the [Vercel Platform](https
 
 Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
 
+## Deploy on Cloudflare Workers
+
+The app runs on Cloudflare Workers through the [OpenNext adapter](https://opennext.js.org/cloudflare) (`wrangler.jsonc`, `open-next.config.ts`). It still uses Neon Postgres and Vercel Blob; only the Next.js server moves to Cloudflare. The compressed Worker is ~1.6 MiB, under the 3 MiB Workers Free limit.
+
+Set the secrets once (or in the Cloudflare dashboard → Worker → Settings → Variables and Secrets):
+
+```bash
+npx wrangler secret put DATABASE_URL
+npx wrangler secret put SESSION_SECRET
+npx wrangler secret put BLOB_READ_WRITE_TOKEN
+```
+
+Build and deploy:
+
+```bash
+npm run deploy
+```
+
+`npm run preview` runs the Worker locally (needs the same variables in `.dev.vars`). OpenNext warns that Windows builds are not fully supported; if a build misbehaves, use WSL or let Cloudflare build from GitHub (Workers Builds, build command `npx opennextjs-cloudflare build`, deploy command `npx opennextjs-cloudflare deploy`, root directory `web`).
+
+Custom domain: the domain's DNS must be on Cloudflare (change the nameservers at the registrar and check the imported MX/TXT records first), then Worker → Settings → Domains & Routes → add the domain.
+
+Image optimization is off (`images.unoptimized`), since Workers have no built-in optimizer. The logo upload in `/admin` processes the image in the browser (`src/lib/process-logo.ts`), since Workers can't run `python3`.
+
 ## Deploy on a local network (LAN)
 
 Run the production build on a machine on your network; other devices on that same network reach it by IP. The app still talks to the same cloud Postgres (Neon) and Vercel Blob storage used elsewhere — only the Next.js server itself runs locally, there's no local database to stand up.

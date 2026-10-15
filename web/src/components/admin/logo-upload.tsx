@@ -5,6 +5,7 @@ import { useActionState, useEffect, useRef, useState, useTransition } from "reac
 
 import { removeLogo, uploadLogo } from "@/app/admin/actions";
 import type { FormState } from "@/app/admin/actions";
+import { processLogo } from "@/lib/process-logo";
 
 // Next.js only serves SVGs through <Image> when optimization is skipped.
 const isSvg = (url: string) => /\.svg($|\?)/i.test(url);
@@ -22,7 +23,9 @@ export function LogoUpload({
   const [isDragging, setIsDragging] = useState(false);
   const [preview, setPreview] = useState<string | null>(null);
   const [isRemoving, startRemoving] = useTransition();
-  const formRef = useRef<HTMLFormElement>(null);
+  const [, startUploading] = useTransition();
+  const [processing, setProcessing] = useState(false);
+  const [processError, setProcessError] = useState<string | null>(null);
   const inputRef = useRef<HTMLInputElement>(null);
   const mounted = useRef(false);
 
@@ -35,14 +38,26 @@ export function LogoUpload({
     if (!state.error) setPreview(null);
   }, [state]);
 
-  function submitFile(file: File) {
+  // Background removal and the light/dark variants are made here in the
+  // browser; the server action only stores the two resulting PNGs.
+  async function submitFile(file: File) {
     setPreview(URL.createObjectURL(file));
-    if (inputRef.current) {
-      const dt = new DataTransfer();
-      dt.items.add(file);
-      inputRef.current.files = dt.files;
+    setProcessError(null);
+    setProcessing(true);
+    let variants: { dark: Blob; light: Blob };
+    try {
+      variants = await processLogo(file);
+    } catch {
+      setProcessError("Não foi possível processar o logotipo. Tente outra imagem.");
+      setPreview(null);
+      return;
+    } finally {
+      setProcessing(false);
     }
-    formRef.current?.requestSubmit();
+    const formData = new FormData();
+    formData.append("logoDark", variants.dark, "logo-dark.png");
+    formData.append("logoLight", variants.light, "logo-light.png");
+    startUploading(() => formAction(formData));
   }
 
   function handleDrop(e: React.DragEvent<HTMLDivElement>) {
@@ -57,15 +72,15 @@ export function LogoUpload({
   return (
     <div>
       <label className={labelClass}>Logotipo</label>
-      <form ref={formRef} action={formAction}>
+      <div>
         <input
           ref={inputRef}
           type="file"
-          name="logo"
           accept="image/*"
           className="hidden"
           onChange={(e) => {
             const file = e.target.files?.[0];
+            e.target.value = "";
             if (file) submitFile(file);
           }}
         />
@@ -87,18 +102,22 @@ export function LogoUpload({
             </div>
           ) : null}
           <p className="font-mono text-xs tracking-widest text-muted-foreground">
-            {pending
+            {processing
               ? "A processar (remover fundo, gerar versão clara/escura)..."
+              : pending
+              ? "A enviar..."
               : hasLogo
                 ? "Arraste para substituir ou clique para escolher"
                 : "Arraste uma imagem ou clique para escolher"}
           </p>
         </div>
-      </form>
+      </div>
 
-      {state.error ? <p className="mt-2 text-sm text-red-400">{state.error}</p> : null}
+      {processError || state.error ? (
+        <p className="mt-2 text-sm text-red-400">{processError ?? state.error}</p>
+      ) : null}
 
-      {!pending && !preview && (currentUrlDark || currentUrlLight) ? (
+      {!pending && !processing && !preview && (currentUrlDark || currentUrlLight) ? (
         <div className="mt-4 grid grid-cols-2 gap-3">
           <div>
             <div className="relative flex h-16 items-center justify-center rounded bg-[#15130f] px-4">
